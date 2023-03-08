@@ -1,271 +1,297 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <meta name="description" content="Michelle Mounde's Software Engineering Portfolio" />
-        <title>Michelle Mounde | Portfolio</title>
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Michelle Mounde | Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Michelle Mounde's Software Engineering Portfolio" />
 
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-        <link rel="manifest" href="assets/favicon/site.webmanifest">
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+		<link rel="manifest" href="assets/favicon/site.webmanifest">
 
-        <!-- Google fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=IBM+Plex+Mono&family=Josefin+Sans&family=Lekton&family=Roboto+Mono&family=Sen&family=Sofia+Sans&family=Space+Grotesk&display=swap" rel="stylesheet">
+		<!-- TODO: Still needed?? Google fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=IBM+Plex+Mono&family=Josefin+Sans&family=Lekton&family=Roboto+Mono&family=Sen&family=Sofia+Sans&family=Space+Grotesk&display=swap" rel="stylesheet">
 
-        <!-- Core theme CSS -->
-        <link rel="stylesheet" href="styles.css">
+		<!-- Core theme CSS -->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-50SJ3TFQN2"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-50SJ3TFQN2"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-        gtag('config', 'G-50SJ3TFQN2');
-        </script>
-    </head>
+		gtag('config', 'G-50SJ3TFQN2');
+		</script>
+	</head>
 
+	<!-- Document -->
+	<body class="is-preload">
 
+		<!-- Sidebar -->
+			<section id="sidebar">
 
-    <!-- Body -->
-    <body>
-        <script src="scripts.js" type="text/javascript" defer></script>
+				<!-- Profile -->
+				<div>
+					<img id="profile" height="100" width="100" src="assets/img/profile.jpg" alt="Michelle Mounde's profile photo" style="border-radius: 50%"/>
+					<p>Michelle Mounde</p>
+				</div>
 
-        <!-- Navigation -->
-        <nav>
+				<!-- Contact Links Mini -->
+				<!-- TODO: Contact, Github, LinkedIn & Social Links -->
+				<div id="contact-mini">
+						<div id="mail">
+								<a href="mailto:michellemounde@gmail.com">
+										<img height="25" width="25" alt="Linkedin profile" src="assets/img/envelope.png" />
+								</a>
+								<a hidden href="https://www.flaticon.com/free-icons/email" title="email icons">
+										Email icons created by Those Icons - Flaticon
+								</a>
+						</div>
+						<div id="linkedin">
+								<a href="https://www.linkedin.com/in/moundemichelle/">
+										<img height="25" width="25" alt="Linkedin profile" src="assets/img/linkedin.png" />
+								</a>
+								<a hidden href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">
+										Linkedin icons created by riajulislam - Flaticon
+								</a>
+						</div>
+						<div id="github">
+								<a href="https://github.com/michellemounde">
+										<img height="25" width="25" alt="Linkedin profile" role="img"
+												src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+								</a>
+						</div>
+				</div>
 
-            <!-- Profile -->
-            <div>
-                <img src="assets/img/profile.jpg" alt="Michelle Mounde's Profile Photo" />
-                <p>Michelle Mounde</p>
-            </div>
+				<!-- Navigation Links -->
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#about">About</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#skills">Skills</a></li>
+							<!-- TODO: Add once you have experience <li><a href="#experience">Experience</a></li> -->
+							<li><a href="#education">Education</a></li>
+							<li><a href="#resume">Resume</a></li>
+							<li><a href="#contact">Contact me</a></li>
+						</ul>
+					</nav>
+				</div>
 
-            <!-- Contact -->
-            <!-- TODO: Contact, Github, LinkedIn & Social Links -->
-            <div>
-                <div id="mail">
-                    <a href="mailto:michellemounde@gmail.com">
-                        <img height="25" width="25" alt="Linkedin profile" src="assets/img/envelope.png" />
-                    </a>
-                    <a hidden href="https://www.flaticon.com/free-icons/email" title="email icons">
-                        Email icons created by Those Icons - Flaticon
-                    </a>
-                </div>
-                <div id="linkedin">
-                    <a href="https://www.linkedin.com/in/moundemichelle/">
-                        <img height="25" width="25" alt="Linkedin profile" src="assets/img/linkedin.png" />
-                    </a>
-                    <a hidden href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">
-                        Linkedin icons created by riajulislam - Flaticon
-                    </a>
-                </div>
-                <div id="github">
-                    <a href="https://github.com/michellemounde">
-                        <img height="25" width="25" alt="Linkedin profile" role="img"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-                    </a>
-                </div>
-            </div>
+				<!-- Navigation Footer-->
+				<div class="nav-footer">
+					<ul>
+							<li>&copy; Michelle Mounde. All rights reserved.</li>
+							<li>&copy; 2023</li>
+					</ul>
+				</div>
+			</section>
 
-            <!-- Navigation Links -->
-            <div>
-                <ul>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Skills</li>
-                    <li>Education</li>
-                    <!-- TODO:Add once you have experience <li>Experience</li> -->
-                    <li>Resume</li>
-                </ul>
-            </div>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-            <!-- Navigation Footer-->
-            <div class="nav-footer">
-                <ul>
-                    <li>&copy; Michelle Mounde. All rights reserved.</li>
-                    <li>&copy; 2023</li>
-                </ul>
-            </div>
-        </nav>
+				<!-- About -->
+					<section id="about" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Michelle <span>Mounde</span></h1>
+							<h2>About</h2>
+            	<h3> Nairobi, Kenya ·</h3>
+							<p>
+									I'm a Full-Stack Software Engineer based in Nairobi, Kenya that specializes in building exceptional software
+									that is effective, intuitive and beautiful. Whether its desigining APIs or dynamically rendering React components,
+									I'm most engaged when I'm solving problems.
+							</p>
+							<p>
+									I have experience building full-stack web applications using React / Redux, Express, Node, JavaScript, PostgreSQL,
+									HTML5, CSS3, Sequelize, Python, Flask and SQLAlchemy and employing version control through the use of Git and Github.
+									Additionally, I am comfortable with containerization using Docker.
+							</p>
+							<p>
+									In my free time, I enjoy outdoor activities, singing, dancing, outdoor racing sports, puzzle games, reading up on the latest
+									scientific breakthroughs and film & TV.
+							</p>
+							<ul class="actions">
+								<li><a href="#projects" class="button scrolly">Learn more</a></li>
+							</ul>
+						</div>
+					</section>
 
-        <!-- Page Content -->
-        <!-- About -->
-        <section>
-            <h2>About</h2>
-            <h3>
-                Michelle
-                <span>Mounde</span>
-            </h3>
-            <div>
-                Nairobi, Kenya ·
-            </div>
-            <p>
-                I'm a Full-Stack Software Engineer based in Nairobi, Kenya that specializes in building exceptional software
-                that is effective, intuitive and beautiful. Whether its desigining APIs or dynamically rendering React components,
-                I'm most engaged when I'm solving problems.
-            </p>
-            <p>
-                I have experience building full-stack web applications using React / Redux, Express, Node, JavaScript, PostgreSQL,
-                HTML5, CSS3, Sequelize, Python, Flask and SQLAlchemy and employing version control through the use of Git and Github.
-                Additionally, I am comfortable with containerization using Docker.
-            </p>
-            <p>
-                In my free time, I enjoy outdoor activities, singing, dancing, outdoor racing sports, puzzle games, reading up on the latest
-                scientific breakthroughs and film & TV.
-            </p>
+				<!-- Projects -->
+					<section id="projects" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="assets/img/pic01.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Sed ipsum dolor</h2>
+									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="assets/img/pic02.jpg" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Feugiat consequat</h2>
+									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="assets/img/pic03.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Ultricies aliquam</h2>
+									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
 
-        </section>
+				<!-- Skills -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Skills</h2>
+							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-code"></span>
+									<h3>Lorem ipsum amet</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-lock"></span>
+									<h3>Aliquam sed nullam</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-cog"></span>
+									<h3>Sed erat ullam corper</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-desktop"></span>
+									<h3>Veroeros quis lorem</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-link"></span>
+									<h3>Urna quis bibendum</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+								</section>
+								<section>
+									<span class="icon major fa-gem"></span>
+									<h3>Aliquam urna dapibus</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+								</section>
+							</div>
+							<ul class="actions">
+								<li><a href="generic.html" class="button">Learn more</a></li>
+							</ul>
+						</div>
+					</section>
 
-        <!-- Projects -->
-        <section>
-            <h2>Projects</h2>
-            <div>
-                <h3>Placeholder Title</h3>
-                <img src="Placeholder GIF">
-                <p>Placeholder Tech Used</p>
-                <p>Placeholder Short Description of What Project does</p>
-            </div>
-            <div>
-                <h3>Placeholder Title</h3>
-                <img src="Placeholder GIF">
-                <p>Placeholder Tech Used</p>
-                <p>Placeholder Short Description of What Project does</p>
-            </div>
-            <div>
-                <h3>Placeholder Title</h3>
-                <img src="Placeholder GIF">
-                <p>Placeholder Tech Used</p>
-                <p>Placeholder Short Description of What Project does</p>
-            </div>
-        </section>
+				<!-- Contact -->
+					<section id="contact" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Contact Me</h2>
+							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<div class="split style1">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>12345 Somewhere Road #654<br />
+											Nashville, TN 00000-0000<br />
+											USA</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">user@untitled.tld</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(000) 000-0000</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
 
-        <!-- Skills -->
-        <section>
-            <h2>Skills</h2>
-            <div>
-                <img height="100" width="100" alt="JavaScript logo" role="img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                <p>JavaScript</p>
-            </div>
-            <div>
-                <img height="100" width="100" alt="Python logo" role="img"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
-                <p>Python</p>
-            </div>
-            <div>
-                <img height="100" width="100" alt="Node.js logo" role="img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
-                <p>Node</p>
-            </div>
-            <div>
-                <img height="100" width="100" alt="React logo" role="img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
-                <p>React</p>
-            </div>
-            <div>
-                <img height="100" width="100" alt="Express logo" role="img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" />
-                <p>Express</p>
-            </div>
-            <div>
-                <img height="100" width="100" alt="Redux logo" role="img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" />
-                <p>Redux</p>
-            </div>
-            <div>
-                <img height="100" width="100" alt="HTML5 logo" role="img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
-                <p>HTML5</p>
-            </div>
-            <div>
-                <img height="100" width="100" alt="CSS3 logo" role="img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
-                <p>CSS3</p>
-            </div>
-            <div>
-                <img height=100 width="100" alt="SQL logo" src="assets/img/sql-server.png" />
-                <a hidden href="https://www.flaticon.com/free-icons/database" title="database icons">
-                    Database icons created by juicy_fish - Flaticon
-                </a>
-                <p>SQL</p>
-            </div>
-            <div>
-                <img height="100" width="100" alt="SQLite logo" role="img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original-wordmark.svg" />
-                <p>SQLite</p>
-            </div>
-            <div>
-                <img height="100" width="100" alt="PostgreSQL logo" role="img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" />
-                <p>PostgreSQL</p>
-            </div>
-            <div>
-                <img height="100" width="100" alt="Docker logo" role="img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg" />
-                <p>Docker</p>
-            </div>
-            <div>
-                <img height="100" width="100" alt="Git logo" role="img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" />
-                <p>Git</p>
-            </div>
-            <div>
-                <img height="100" width="100" alt="Github logo" role="img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
-                <p>Github</p>
-            </div>
-            <div>
-                <img height="100" width="100" alt="Flask logo" role="img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" />
-                <p>Flask</p>
-            </div>
-            <div>
-                <img height="100" width="100" alt="Sequelize logo" role="img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original-wordmark.svg" />
-                <p>Sequelize</p>
-            </div>
-            <div>
-                <img height="100" width="100" alt="SQLAlchemy logo" role="img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original-wordmark.svg" />
-                <p>SQLAlchemy</p>
-            </div>
-        </section>
+			</div>
 
-        <!-- TODO: Add once you have experience: Experience -->
-        <!-- <section> -->
-            <!-- <h2>Experience</h2> -->
-        <!-- </section> -->
-        <!--TODO: End of future experience section -->
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Michelle Mounde. All rights reserved.</li>
+						<li>&copy; 2023</li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
 
-        <!-- Education -->
-        <section>
-            <h2>Education</h2>
-            <div>
-                <h3>App Academy Open</h3>
-                <img height="100" width="100" src="assets/img/app-academy-logo-red.png" alt="App Academy logo">
-                <p>Full-Stack Software Engineering Online</p>
-            </div>
-            <div>
-                <h3>University of Nairobi</h3>
-                <img height="100" width="125" src="assets/img/University-of-Nairobi-logo.png" alt="University of Nairobi logo">
-                <p>BSc. in Quantity Surveying</p>
-            </div>
-        </section>
-
-        <!-- Resume -->
-        <!-- TODO: Link to open Resume in PDF -->
-        <div class="resume">
-            <h2>Resume</h2>
-            <a href="assets/files/Mounde Michelle - Software Engineer - Resume Incomplete.pdf">
-                View my Resume
-            </a>
-        </div>
-    </body>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
 </html>

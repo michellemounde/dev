@@ -43,11 +43,10 @@
 
 		<!-- Sidebar -->
 			<section id="sidebar">
-
 				<!-- Profile -->
-				<div>
-					<img id="profile" height="100" width="100" src="assets/img/profile.jpg" alt="Michelle Mounde's profile photo" style="border-radius: 50%"/>
-					<p>Michelle Mounde</p>
+				<div class="profile">
+					<img class="profile-img" height="100" width="100" src="assets/img/profile.jpg" alt="Michelle Mounde's profile photo" />
+					<p class="profile-name">Michelle Mounde</p>
 				</div>
 
 				<!-- Contact Links Mini -->
@@ -79,15 +78,15 @@
 
 				<!-- Navigation Links -->
 				<div class="inner">
-					<nav>
+					<nav class="nav">
 						<ul>
-							<li><a href="#about">About</a></li>
-							<li><a href="#projects">Projects</a></li>
-							<li><a href="#skills">Skills</a></li>
-							<!-- TODO: Add once you have experience <li><a href="#experience">Experience</a></li> -->
-							<li><a href="#education">Education</a></li>
-							<li><a href="#resume">Resume</a></li>
-							<li><a href="#contact">Contact me</a></li>
+							<li><a class="nav-item" href="#about">About</a></li>
+							<li><a class="nav-item" href="#projects">Projects</a></li>
+							<li><a class="nav-item" href="#skills">Skills</a></li>
+							<!-- TODO: Add once you have experience <li><a class="nav-item" href="#experience">Experience</a></li> -->
+							<li><a class="nav-item" href="#education">Education</a></li>
+							<li><a class="nav-item" href="#resume">Resume</a></li>
+							<li><a class="nav-item" href="#contact">Contact me</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -95,9 +94,42 @@
 				<!-- Navigation Footer-->
 				<div class="nav-footer">
 					<ul>
-							<li>&copy; Michelle Mounde. All rights reserved.</li>
-							<li>&copy; 2023</li>
+							<li>&copy; 2023 Michelle Mounde. All rights reserved.</li>
+							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
+				</div>
+			</section>
+
+			<!-- Topbar -->
+			<section id="topbar">
+				<!-- Profile -->
+				<div class="profile">
+					<img class="profile-img" height="45" width="45" src="assets/img/profile.jpg" alt="Michelle Mounde's profile photo" />
+					<p class="profile-name">Michelle Mounde</p>
+				</div>
+
+				<!-- Hamburger menu checkbox for smaller devices -->
+				<div class="menu">
+					<input type="checkbox" class="menu-btn" id="menu-btn" name="menu-btn" />
+					<label class="menu-icon" for="menu-btn">
+						<span>MENU</span>
+						<span class="navicon" aria-label="Hamburger menu 'icon'"></span>
+					</label>
+				</div>
+
+				<!-- Navigation Links -->
+				<div class="inner">
+					<nav class="nav">
+						<ul>
+							<li><a class="nav-item" href="#about">About</a></li>
+							<li><a class="nav-item" href="#projects">Projects</a></li>
+							<li><a class="nav-item" href="#skills">Skills</a></li>
+							<!-- TODO: Add once you have experience <li><a class="nav-item" href="#experience">Experience</a></li> -->
+							<li><a class="nav-item" href="#education">Education</a></li>
+							<li><a class="nav-item" href="#resume">Resume</a></li>
+							<li><a class="nav-item" href="#contact">Contact me</a></li>
+						</ul>
+					</nav>
 				</div>
 			</section>
 
@@ -107,7 +139,12 @@
 				<!-- About -->
 					<section id="about" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<h1>Michelle <span>Mounde</span></h1>
+							<!-- Profile -->
+							<div class="profile">
+								<h1>Michelle <span>Mounde</span></h1>
+								<img class="profile-img" height="100" width="100" src="assets/img/profile.jpg" alt="Michelle Mounde's profile photo" />
+							</div>
+
 							<h2>About</h2>
             	<h3> Nairobi, Kenya ·</h3>
 							<p>
@@ -116,8 +153,8 @@
 									I'm most engaged when I'm solving problems.
 							</p>
 							<p>
-									I have experience building full-stack web applications using React / Redux, Express, Node, JavaScript, PostgreSQL,
-									HTML5, CSS3, Sequelize, Python, Flask and SQLAlchemy and employing version control through the use of Git and Github.
+									I have experience building full-stack web applications using JavaScript, Python, React / Redux, Express, Node, PostgreSQL,
+									HTML5, CSS3, Sequelize, Flask and SQLAlchemy and employing version control through the use of Git and Github.
 									Additionally, I am comfortable with containerization using Docker.
 							</p>
 							<p>
@@ -278,8 +315,7 @@
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Michelle Mounde. All rights reserved.</li>
-						<li>&copy; 2023</li>
+						<li>&copy; 2023 Michelle Mounde. All rights reserved.</li>
 						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>

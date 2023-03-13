@@ -2613,6 +2613,13 @@ input, select, textarea {
 				width: 100%;
 			}
 
+/* Profile Image*/
+
+	.profile-img {
+		border: 0.25rem solid rgba(255, 255, 255, 0.15);
+		border-radius: 50%
+	}
+
 /* List */
 
 	ol {
@@ -3049,6 +3056,7 @@ input, select, textarea {
 			justify-content: center;
 			width: 50em;
 			-ms-flex: 1;
+			flex: 1;
 		}
 
 			.spotlights > section > .content > .inner {
@@ -3802,7 +3810,14 @@ input, select, textarea {
 
 		@media screen and (max-width: 1280px) {
 
+			#contact-mini,
+			.nav-footer {
+				display: none;
+			}
+
 			#sidebar {
+				display: flex;
+				flex-flow: row nowrap;
 				height: 3.5em;
 				left: 0;
 				line-height: 3.5em;
@@ -3812,6 +3827,24 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 			}
+
+				#sidebar .profile {
+					padding: 0.25rem;
+					width: 23.5vw;
+					height: 100%;
+					border-right: 0.05rem solid #B9FAF8;
+					align-items: center;
+				}
+
+					#sidebar > .profile .profile-name {
+						margin: 0 0.5rem;
+						font-size: 0.85rem;
+					}
+
+					#sidebar .profile .profile-img {
+						height: 45px;
+						width: 45px;
+					}
 
 				#sidebar > .inner {
 					-moz-flex-direction: row;
@@ -3824,6 +3857,8 @@ input, select, textarea {
 					align-items: stretch;
 					height: inherit;
 					line-height: inherit;
+					width: fit-content;
+					padding-left: 1rem;
 				}
 
 				#sidebar nav {
@@ -3867,8 +3902,149 @@ input, select, textarea {
 			#sidebar {
 				display: none;
 			}
-
 		}
+
+/* Topbar */
+
+	#topbar {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 13.5vw;
+		overflow-x: auto;
+		overflow-y: hidden;
+		text-align: center;
+		z-index: 10000;
+		cursor: default;
+		border: none;
+		padding: 0.25em 0.5em;
+		margin: 0px;
+		background: #312450;
+	}
+
+		#topbar .profile .profile-name {
+			margin: 0.5rem 0.5rem;
+		}
+
+		#topbar .inner {
+			visibility: hidden;
+			position: fixed;
+			top: 0;
+			left: 15.625rem;
+			width: 12.5rem;
+			height: 25vh;
+			background-color: #3D0E61;
+			transition: 0.3s;
+			padding: 0px 0.625rem;
+			box-sizing: border-box;
+		}
+
+		#topbar li {
+			list-style-type: none;
+			line-height: 1rem;
+		}
+
+		#topbar a {
+			color: #B9FAF8;
+			font-size: 1.3rem;
+			text-decoration: none;
+		}
+
+			#topbar a:hover {
+				text-decoration: underline;
+			}
+
+	.navicon {
+		background-color: black;
+		display: block;
+		position: relative;
+		width: 1.125rem;
+		height: 0.125rem;
+	}
+
+		.navicon::before {
+			top: 0.3125rem;
+		}
+
+		.navicon::after {
+			bottom: 0.3125rem;
+		}
+
+		.navicon::before,
+		.navicon::after {
+			background: black;
+			display: block;
+			width: 100%;
+			height: 100%;
+			content: '';
+			position: absolute;
+			transition: all 0.3s ease-out;
+		}
+
+	.menu {
+		transition: max-height .2s ease-out;
+		overflow-x: visible;
+		overflow-y: hidden;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		top: 0.25rem;
+		right: 0.25rem;
+		width: fit-content;
+	}
+
+		input[type="checkbox"] + label:before {
+			all: unset;
+		}
+
+		.menu-btn + .menu-icon {
+			display: flex;
+			flex-flow: row nowrap;
+			align-items: center;
+			justify-content: space-around;
+			font-size: 0.5rem;
+			padding: 0.25rem;
+			width: 15vw;
+			height: 10vw;
+		}
+
+		label.menu-icon:first-child {
+			width: fit-content;
+			vertical-align: middle;
+		}
+
+		.menu-btn:checked ~ .menu {
+			max-height: 25vh;
+		}
+
+		.menu-btn:checked ~ .menu-icon .navicon {
+			background-color: transparent;
+		}
+
+			.menu-btn:checked ~ .menu-icon .navicon::before {
+				transform: rotate(-45deg);
+			}
+
+			.menu-btn:checked ~ .menu-icon .navicon::after {
+				transform: rotate(45deg);
+			}
+
+			.menu-btn:checked ~ .menu-icon .navicon::before,
+			.menu-btn:checked ~ .menu-icon .navicon::after {
+				top: 0;
+			}
+
+	@media screen and (min-width: 737px) {
+
+		#topbar {
+			display: none;
+		}
+
+	}
 
 /* Intro */
 
@@ -3907,3 +4083,11 @@ input, select, textarea {
 			}
 
 		}
+
+/* Profile */
+
+	.profile {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+	}

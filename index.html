@@ -26,6 +26,10 @@
 		<!-- Core theme CSS -->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+
+	<!-- Document -->
+	<body class="is-preload">
 
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-50SJ3TFQN2"></script>
@@ -36,10 +40,34 @@
 
 		gtag('config', 'G-50SJ3TFQN2');
 		</script>
-	</head>
 
-	<!-- Document -->
-	<body class="is-preload">
+		<!-- Topbar -->
+		<section id="topbar">
+			<!-- Profile -->
+			<div class="profile">
+				<img class="profile-img" height="45" width="45" src="assets/img/profile.jpg" alt="Michelle Mounde's profile photo" />
+				<p class="profile-name">Michelle Mounde</p>
+			</div>
+
+			<!-- Hamburger menu checkbox for smaller devices -->
+			<div class="menu inner">
+				<input hidden type="checkbox" class="menu-btn" id="menu-btn" name="menu-btn" />
+				<label class="menu-icon" for="menu-btn">
+					<span class="navicon" aria-label="Hamburger menu 'icon'"></span>
+				</label>
+				<nav class="nav">
+					<ul>
+						<li><a href="#about">About</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<!-- TODO: Add once you have experience <li><a href="#experience">Experience</a></li> -->
+						<li><a href="#education">Education</a></li>
+						<li><a href="#resume">Resume</a></li>
+						<li><a href="#contact">Contact me</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
 
 		<!-- Sidebar -->
 			<section id="sidebar">
@@ -49,88 +77,39 @@
 					<p class="profile-name">Michelle Mounde</p>
 				</div>
 
-				<!-- Contact Links Mini -->
-				<!-- TODO: Contact, Github, LinkedIn & Social Links -->
-				<div id="contact-mini">
-						<div id="mail">
-								<a href="mailto:michellemounde@gmail.com">
-										<img height="25" width="25" alt="Linkedin profile" src="assets/img/envelope.png" />
-								</a>
-								<a hidden href="https://www.flaticon.com/free-icons/email" title="email icons">
-										Email icons created by Those Icons - Flaticon
-								</a>
-						</div>
-						<div id="linkedin">
-								<a href="https://www.linkedin.com/in/moundemichelle/">
-										<img height="25" width="25" alt="Linkedin profile" src="assets/img/linkedin.png" />
-								</a>
-								<a hidden href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">
-										Linkedin icons created by riajulislam - Flaticon
-								</a>
-						</div>
-						<div id="github">
-								<a href="https://github.com/michellemounde">
-										<img height="25" width="25" alt="Linkedin profile" role="img"
-												src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-								</a>
-						</div>
+				<!-- Contact Links Mini Version -->
+				<div id="contact-mini" class="wrapper fade-up">
+					<ul class="icons">
+						<li><a href="https://github.com/michellemounde" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/moundemichelle/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="mailto:michellemounde@gmail.com" class="icon brands fa-mail"><span class="label">Email me</span></a></li>
+					</ul>
 				</div>
 
 				<!-- Navigation Links -->
-				<div class="inner">
+				<div id="nav-wrapper">
 					<nav class="nav">
 						<ul>
-							<li><a class="nav-item" href="#about">About</a></li>
-							<li><a class="nav-item" href="#projects">Projects</a></li>
-							<li><a class="nav-item" href="#skills">Skills</a></li>
-							<!-- TODO: Add once you have experience <li><a class="nav-item" href="#experience">Experience</a></li> -->
-							<li><a class="nav-item" href="#education">Education</a></li>
-							<li><a class="nav-item" href="#resume">Resume</a></li>
-							<li><a class="nav-item" href="#contact">Contact me</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#skills">Skills</a></li>
+							<!-- TODO: Add once you have experience <li><a href="#experience">Experience</a></li> -->
+							<li><a href="#education">Education</a></li>
+							<li><a href="#resume">Resume</a></li>
+							<li><a href="#contact">Contact me</a></li>
 						</ul>
 					</nav>
 				</div>
 
 				<!-- Navigation Footer-->
-				<div class="nav-footer">
-					<ul>
+				<footer id="nav-footer" class="wrapper style1-alt">
+					<div class="inner">
+						<ul class="menu">
 							<li>&copy; 2023 Michelle Mounde. All rights reserved.</li>
 							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</section>
-
-			<!-- Topbar -->
-			<section id="topbar">
-				<!-- Profile -->
-				<div class="profile">
-					<img class="profile-img" height="45" width="45" src="assets/img/profile.jpg" alt="Michelle Mounde's profile photo" />
-					<p class="profile-name">Michelle Mounde</p>
-				</div>
-
-				<!-- Hamburger menu checkbox for smaller devices -->
-				<div class="menu">
-					<input type="checkbox" class="menu-btn" id="menu-btn" name="menu-btn" />
-					<label class="menu-icon" for="menu-btn">
-						<span>MENU</span>
-						<span class="navicon" aria-label="Hamburger menu 'icon'"></span>
-					</label>
-				</div>
-
-				<!-- Navigation Links -->
-				<div class="inner">
-					<nav class="nav">
-						<ul>
-							<li><a class="nav-item" href="#about">About</a></li>
-							<li><a class="nav-item" href="#projects">Projects</a></li>
-							<li><a class="nav-item" href="#skills">Skills</a></li>
-							<!-- TODO: Add once you have experience <li><a class="nav-item" href="#experience">Experience</a></li> -->
-							<li><a class="nav-item" href="#education">Education</a></li>
-							<li><a class="nav-item" href="#resume">Resume</a></li>
-							<li><a class="nav-item" href="#contact">Contact me</a></li>
 						</ul>
-					</nav>
-				</div>
+					</div>
+				</footer>
 			</section>
 
 		<!-- Wrapper -->
@@ -140,22 +119,24 @@
 					<section id="about" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<!-- Profile -->
+							<h2>Hello, my name is</h2>
 							<div class="profile">
 								<h1>Michelle <span>Mounde</span></h1>
 								<img class="profile-img" height="100" width="100" src="assets/img/profile.jpg" alt="Michelle Mounde's profile photo" />
 							</div>
 
-							<h2>About</h2>
-            	<h3> Nairobi, Kenya ·</h3>
+            	<h3>from Nairobi, Kenya.</h3>
+							<br>
 							<p>
-									I'm a Full-Stack Software Engineer based in Nairobi, Kenya that specializes in building exceptional software
+									I'm a <span>Full-Stack Software Engineer</span> that specializes in building exceptional software
 									that is effective, intuitive and beautiful. Whether its desigining APIs or dynamically rendering React components,
 									I'm most engaged when I'm solving problems.
 							</p>
 							<p>
-									I have experience building full-stack web applications using JavaScript, Python, React / Redux, Express, Node, PostgreSQL,
-									HTML5, CSS3, Sequelize, Flask and SQLAlchemy and employing version control through the use of Git and Github.
-									Additionally, I am comfortable with containerization using Docker.
+									I have experience building full-stack web applications using <span>JavaScript</span>, <span>Python</span>, <span>React / Redux</span>,
+									<span>Express</span>, <span>Node</span>, <span>PostgreSQL</span>, <span>HTML5</span>, <span>CSS3</span>, <span>Sequelize</span>,
+									<span>Flask</span> and <span>SQLAlchemy</span> and employing version control through the use of <span>Git</span> and <span>Github</span>.
+									Additionally, I am comfortable with containerization using <span>Docker</span>.
 							</p>
 							<p>
 									In my free time, I enjoy outdoor activities, singing, dancing, outdoor racing sports, puzzle games, reading up on the latest
@@ -175,9 +156,6 @@
 								<div class="inner">
 									<h2>Sed ipsum dolor</h2>
 									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
 								</div>
 							</div>
 						</section>
@@ -187,9 +165,6 @@
 								<div class="inner">
 									<h2>Feugiat consequat</h2>
 									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
 								</div>
 							</div>
 						</section>
@@ -199,16 +174,13 @@
 								<div class="inner">
 									<h2>Ultricies aliquam</h2>
 									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
 								</div>
 							</div>
 						</section>
 					</section>
 
 				<!-- Skills -->
-					<section id="two" class="wrapper style3 fade-up">
+					<section id="skills" class="wrapper style3 fade-up">
 						<div class="inner">
 							<h2>Skills</h2>
 							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
@@ -244,11 +216,40 @@
 									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
 								</section>
 							</div>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>
 						</div>
 					</section>
+
+				<!-- Education -->
+				<section id="education" class="wrapper style2 spotlights">
+					<section>
+						<a href="#" class="image"><img src="assets/img/pic01.jpg" alt="" data-position="center center" /></a>
+						<div class="content">
+							<div class="inner">
+								<h2>Sed ipsum dolor</h2>
+								<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+							</div>
+						</div>
+					</section>
+					<section>
+						<a href="#" class="image"><img src="assets/img/pic02.jpg" alt="" data-position="top center" /></a>
+						<div class="content">
+							<div class="inner">
+								<h2>Feugiat consequat</h2>
+								<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<!-- Resume -->
+				<section id="resume" class="wrapper style3 fade-up">
+					<div class="inner">
+						<h2>Resume</h2>
+						<ul class="actions">
+							<li><a href="https://docs.google.com/document/d/1sySaCXiTcgQv0ESN312S83S3G4W5GhOf88mW4zhTcJM/edit?usp=sharing" class="button">Open in New Tab</a></li>
+						</ul>
+					</div>
+				</section>
 
 				<!-- Contact -->
 					<section id="contact" class="wrapper style1 fade-up">
@@ -281,26 +282,18 @@
 									<ul class="contact">
 										<li>
 											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
+											<span>Nairobi, NBO<br />
+											Kenya</span>
 										</li>
 										<li>
 											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
+											<a href="mailto:michellemounde@gmail.com">michellemounde@gmail.com</a>
 										</li>
 										<li>
 											<h3>Social</h3>
 											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+												<li><a href="https://github.com/michellemounde" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="https://www.linkedin.com/in/moundemichelle/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 											</ul>
 										</li>
 									</ul>

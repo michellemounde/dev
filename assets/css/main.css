@@ -3758,7 +3758,8 @@ input, select, textarea {
 			text-transform: uppercase;
 		}
 
-			#sidebar nav a:before, #sidebar nav a:after {
+			#sidebar nav a:before,
+			#sidebar nav a:after {
 				border-radius: 0.2em;
 				bottom: 0;
 				content: '';
@@ -3811,7 +3812,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#contact-mini,
-			.nav-footer {
+			#nav-footer {
 				display: none;
 			}
 
@@ -3880,8 +3881,8 @@ input, select, textarea {
 							display: block;
 							height: inherit;
 							line-height: inherit;
-							margin: 0 0 0 2em;
-							padding: 0;
+							margin: 0 0 0 0.5em;
+							padding: 0 0.75rem;
 						}
 
 					#sidebar nav a {
@@ -3930,113 +3931,111 @@ input, select, textarea {
 			margin: 0.5rem 0.5rem;
 		}
 
-		#topbar .inner {
+		#topbar .nav {
 			visibility: hidden;
 			position: fixed;
 			top: 0;
 			left: 15.625rem;
 			width: 12.5rem;
-			height: 25vh;
+			height: fit-content;
 			background-color: #3D0E61;
-			transition: 0.3s;
-			padding: 0px 0.625rem;
+			transition: 0.4s;
+			padding: 0px 0.05rem;
 			box-sizing: border-box;
+		}
+
+		#topbar ul {
+			position: relative;
+			top: 5%;
+			width: 100%;
+			margin: 0 0 0.5rem 0;
 		}
 
 		#topbar li {
 			list-style-type: none;
-			line-height: 1rem;
+			line-height: 0.75rem;
+			padding: 0.5rem 0;
+			text-align: start;
 		}
 
 		#topbar a {
+			border-bottom: none;
 			color: #B9FAF8;
-			font-size: 1.3rem;
+			font-size: 0.75rem;
 			text-decoration: none;
 		}
 
-			#topbar a:hover {
-				text-decoration: underline;
+			#topbar a:hover,
+			#topbar a:active {
+				color: black;
 			}
 
-	.navicon {
-		background-color: black;
-		display: block;
-		position: relative;
-		width: 1.125rem;
-		height: 0.125rem;
-	}
-
-		.navicon::before {
-			top: 0.3125rem;
-		}
-
-		.navicon::after {
-			bottom: 0.3125rem;
-		}
-
-		.navicon::before,
-		.navicon::after {
-			background: black;
+		#topbar .navicon {
+			background-color: black;
 			display: block;
-			width: 100%;
-			height: 100%;
-			content: '';
-			position: absolute;
-			transition: all 0.3s ease-out;
+			position: relative;
+			top: 0.25rem;
+			width: 1.125rem;
+			height: 0.125rem;
+			z-index: 10001;
 		}
 
-	.menu {
-		transition: max-height .2s ease-out;
-		overflow-x: visible;
-		overflow-y: hidden;
-		margin: 0;
-		padding: 0;
-		position: relative;
-		top: 0.25rem;
-		right: 0.25rem;
-		width: fit-content;
-	}
+			#topbar .navicon::before {
+				top: 0.3125rem;
+			}
 
-		input[type="checkbox"] + label:before {
+			#topbar .navicon::after {
+				bottom: 0.3125rem;
+			}
+
+			#topbar .navicon::before,
+			#topbar .navicon::after {
+				background: black;
+				display: block;
+				width: 100%;
+				height: 100%;
+				content: '';
+				position: absolute;
+				transition: all 0.4s ease-out;
+			}
+
+		#topbar input[type="checkbox"] + label:before,
+		#topbar input[type="checkbox"]:checked + label:before {
 			all: unset;
 		}
 
-		.menu-btn + .menu-icon {
-			display: flex;
-			flex-flow: row nowrap;
-			align-items: center;
-			justify-content: space-around;
-			font-size: 0.5rem;
-			padding: 0.25rem;
-			width: 15vw;
-			height: 10vw;
+		#topbar .menu {
+			transition: all 0.4s ease-out;
+			overflow-x: visible;
+			overflow-y: hidden;
+			margin: 0;
+			padding: 0;
+			position: relative;
+			top: 0;
+			right: 0;
 		}
 
-		label.menu-icon:first-child {
-			width: fit-content;
-			vertical-align: middle;
-		}
-
-		.menu-btn:checked ~ .menu {
-			max-height: 25vh;
-		}
-
-		.menu-btn:checked ~ .menu-icon .navicon {
-			background-color: transparent;
-		}
-
-			.menu-btn:checked ~ .menu-icon .navicon::before {
-				transform: rotate(-45deg);
+			#topbar .menu-btn:checked ~ .nav {
+				max-height: max-content;
+				visibility: visible;
 			}
 
-			.menu-btn:checked ~ .menu-icon .navicon::after {
-				transform: rotate(45deg);
+			#topbar .menu-btn:checked ~ .menu-icon .navicon {
+				background-color: transparent;
 			}
 
-			.menu-btn:checked ~ .menu-icon .navicon::before,
-			.menu-btn:checked ~ .menu-icon .navicon::after {
-				top: 0;
-			}
+				#topbar .menu-btn:checked ~ .menu-icon .navicon::before {
+						transform: rotate(-45deg);
+				}
+
+				#topbar .menu-btn:checked ~ .menu-icon .navicon::after {
+					transform: rotate(45deg);
+				}
+
+				#topbar .menu-btn:checked ~ .menu-icon .navicon::before,
+				#topbar .menu-btn:checked ~ .menu-icon .navicon::after {
+					top: 0;
+				}
 
 	@media screen and (min-width: 737px) {
 
@@ -4046,9 +4045,9 @@ input, select, textarea {
 
 	}
 
-/* Intro */
+/* About */
 
-	#intro {
+	#about {
 		background-attachment: fixed;
 		background-image: url("images/intro.svg");
 		background-position: top right;
@@ -4056,13 +4055,13 @@ input, select, textarea {
 		background-size: 100% 100%;
 	}
 
-		#intro p {
+		#about p {
 			font-size: 1.25em;
 		}
 
 			@media screen and (max-width: 980px) {
 
-				#intro p br {
+				#about p br {
 					display: none;
 				}
 
@@ -4070,7 +4069,7 @@ input, select, textarea {
 
 			@media screen and (max-width: 736px) {
 
-				#intro p {
+				#about p {
 					font-size: 1em;
 				}
 
@@ -4078,7 +4077,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 1280px) {
 
-			#intro {
+			#about {
 				background-attachment: scroll;
 			}
 
@@ -4089,5 +4088,46 @@ input, select, textarea {
 	.profile {
 		display: flex;
 		flex-flow: row nowrap;
-		justify-content: space-between;
+		justify-content: space-evenly;
 	}
+
+/* About */
+
+	#about span {
+		font-weight: 900;
+		color: #00eaff;
+	}
+
+/* Scrollbar */
+
+	/* Works on Firefox */
+
+	* {
+		scrollbar-width: thin;
+		scrollbar-color: rgba(0, 0, 0, 0.4) rgba(0, 0, 0, 0.1);
+	}
+
+	/* Works on Chrome, Edge, and Safari */
+
+	::-webkit-scrollbar {
+    width: 0.45rem;
+    height: 0.45rem;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 2rem;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 2rem;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+  	background: rgba(0, 0, 0, 0.6);
+  }
+
+  ::-webkit-scrollbar-thumb:active {
+  	background: rgba(0,0,0,.9);
+  }

@@ -40,8 +40,8 @@ List your collaborators, if any, with links to their GitHub profiles.
 If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
 Credits:
 
-	Demo Images:
-		Unsplash (unsplash.com)
+	Design:
+		HTML5UP (html5up.net)
 
 	Icons:
 		Font Awesome (fontawesome.io)

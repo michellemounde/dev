@@ -16,10 +16,10 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
 		<link rel="manifest" href="assets/favicon_io/site.webmanifest">
 
-		<!-- TODO: Still needed?? Google fonts-->
+		<!-- Google fonts-->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=IBM+Plex+Mono&family=Josefin+Sans&family=Lekton&family=Roboto+Mono&family=Sen&family=Sofia+Sans&family=Space+Grotesk&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Space+Mono&display=swap" rel="stylesheet">
 
 		<!-- Core theme CSS -->
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -43,14 +43,20 @@
 
 			<!-- About -->
 			<section class="banner style3 orient-left content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
-				<div class="content">
-					<p>Hi, I'm</p>
+				<div id="about" class="content">
+					<p class="major">
+						<span id="greeting" class="typewriter"></span>
+						, I'm
+					</p>
+
 					<h1>Michelle Mounde</h1>
-					<h2>Full-Stack Software Engineer</h2>
+					<h2>Software Engineer</h2>
+
 					<p class="major">
 						I love turning ideas into exceptional web applications and features that are responsive, accessible and
 						beautiful. I like programming because I can build software that enhances people's daily lives and transforms society.
 					</p>
+
 					<ul class="actions stacked">
 						<li><a href="#projects" class="button big wide smooth-scroll-middle">Learn more</a></li>
 					</ul>
@@ -160,6 +166,7 @@
 			<section id="skills" class="wrapper style1 align-center">
 				<div class="inner">
 					<h2>Skills</h2>
+					<h3>Programming Languages & Tools</h3>
 					<div class="items style3 small onscroll-fade-in">
 						<section>
 							<img alt="JavaScript logo" role="img"
@@ -321,7 +328,7 @@
 						<p>
 							&copy;
 							<script>document.write(new Date().getFullYear())</script>
-							Built with ❤️💛🧡 by Michelle Mounde.
+							Built with 🤎💛🧡 by Michelle Mounde.
 						</p>
 
 						<p>Design: <a href="https://html5up.net">HTML5 UP</a></p>
@@ -336,6 +343,7 @@
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/change-greeting.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 

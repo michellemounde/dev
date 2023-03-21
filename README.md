@@ -50,6 +50,7 @@ Credits:
 		jQuery (jquery.com)
 		Scrollex (github.com/ajlkn/jquery.scrollex)
 		Responsive Tools (github.com/ajlkn/responsive-tools)
+		Animations (https://alvarotrigo.com/blog/)
 
 If you followed tutorials, include links to those here as well.
 

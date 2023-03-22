@@ -157,9 +157,9 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "Space Mono", monospace;
+		font-family: "Outfit", sans-serif;
 		font-size: 1rem;
-		font-weight: lighter;
+		font-weight: 200;
 		line-height: 1.65;
 	}
 
@@ -193,7 +193,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-family: "Chakra Petch", sans-serif;
-		font-weight: 600;
+		font-weight: 500;
 		line-height: 1.375;
 		letter-spacing: -0.05em;
 		margin: 0 0 1rem 0;
@@ -8254,6 +8254,10 @@ input, select, textarea {
 		background-color: inherit;
 		width: 100%;
 		overflow-x: hidden;
+		padding-top: 3.125rem;
+		height: calc(100% - 3.125rem);
+		z-index: 0;
+		overflow-y: auto;
 	}
 
 		#wrapper > .invert {
@@ -8623,9 +8627,8 @@ input, select, textarea {
 			width: 7.8125rem;
 		}
 
+
 /* Greeting */
-
-
 
 	.typewriter {
 		animation:
@@ -8674,3 +8677,183 @@ input, select, textarea {
 			@keyframes colorize {
 				to { background-position: 200% center; }
 			}
+
+
+/* Navbar */
+
+#navbar {
+	align-items: center;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	height: 3.125rem;
+	width: 100%;
+	z-index: 100;
+	background-color: rgb(172, 171, 171);
+}
+
+	#navbar p,
+	#navbar ul {
+		margin: 0;
+	}
+
+	#navbar p {
+		font-family: "Chakra Petch", sans-serif;
+		font-size: 1.5rem;
+		font-weight: bold;
+		padding: 0 0 0 1rem;
+	}
+
+		#navbar > p .colorize {
+			animation:
+				colorize 3s linear infinite;
+			background-image: linear-gradient(
+				-225deg,
+				#231557 0%,
+				#44107a 29%,
+				#ff1361 67%,
+				#fff800 100%
+			);
+			background-size: 200% auto;
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			color: #fff;
+		}
+
+
+	#navbar .menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+		#navbar.active .menu {
+			visibility: visible;
+			display: initial;
+			width: 18.75rem;
+			height: 25rem;
+			transition: width 0.5s, height 0.5s;
+			transition-delay: 0s, 0.75s;
+			position: absolute;
+			top: 3.125rem;
+			right: 0;
+			padding: 1.25rem;
+			background-color: rgba(71, 211, 229, 0.75);
+		}
+
+		#navbar li {
+			list-style-type: none;
+			padding: 0 2.5vw;
+		}
+
+			#navbar.active li {
+				font-size: 1.25rem;
+				padding: 1rem 0;
+			}
+
+		#navbar a {
+			text-decoration: none;
+			font-weight: 400;
+		}
+
+			#navbar a:hover,
+			#navbar a:active {
+				animation:
+				colorize 3s linear infinite;
+				background-image: linear-gradient(
+					-225deg,
+					#231557 0%,
+					#44107a 29%,
+					#ff1361 67%,
+					#fff800 100%
+				);
+				background-size: 200% auto;
+				background-clip: text;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				color: #fff;
+			}
+
+	#navbar #hamburger-menu {
+		position: relative;
+		width: 3.75rem;
+		height: 3.125rem;
+		background-color: rgb(71, 211, 229);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: height 0.5s, width 0.5s;
+		transition-delay: 0s, 0.75s;
+		overflow: hidden;
+	}
+
+		#navbar #hamburger-menu::before {
+			content: "";
+			position: absolute;
+			width: 2rem;
+			height: 0.25rem;
+			background: black;
+			transform: translateY(-0.625rem);
+			box-shadow: 0 0.625rem black;
+			transition: 0.5s;
+		}
+
+		#navbar #hamburger-menu::after {
+			content: "";
+			position: absolute;
+			width: 2rem;
+			height: 0.25rem;
+			background: black;
+			transform: translateY(0.625rem);
+			transition: 0.5s;
+		}
+
+		#navbar.active #hamburger-menu::before {
+			transform: translateY(0px) rotate(45deg);
+			box-shadow: 0 0 black;
+		}
+
+		#navbar.active #hamburger-menu::after {
+			transform: translateY(0px) rotate(-45deg);
+		}
+
+
+	@media screen and (min-width: 981px) {
+
+		#hamburger-menu {
+			visibility: hidden;
+			width: 0;
+		}
+	}
+
+	@media screen and (max-width: 980px) {
+
+		.menu {
+			visibility: hidden;
+			width: 0;
+		}
+
+	}
+
+
+/* Footer */
+
+footer {
+	background-color: rgb(172, 171, 171);
+}
+
+	footer p {
+		padding: 1rem 0;
+		margin: 0;
+		font-weight: 400;
+	}
+
+
+/* Mode */
+
+.mode {
+
+}

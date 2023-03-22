@@ -45,12 +45,37 @@ const greetings = [
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  let idx = 0;
   const elem = document.getElementById("greeting");
-  const intervalId = setInterval(changeGreeting, 3500);
+  const changeIntvlId = setInterval(changeGreeting, 3500);
+  let idx = 0;
 
   function changeGreeting() {
-    elem.textContent = greetings[idx];
-    idx < greetings.length ? idx++ : idx = 0;
+    let greeting = greetings[idx];
+    let intvlId = setInterval(removeChar, 1500/elem.textContent.length)
+
+    let i = elem.textContent.length - 1
+
+    function removeChar() {
+      elem.textContent = elem.textContent.slice(0, i)
+
+      if (i > 0) {
+        i--
+      } else {
+        clearInterval(intvlId);
+        intvlId = setInterval(addChar, 1500/greeting.length)
+      }
+    }
+
+    function addChar() {
+      if (greeting[i]) {
+        elem.textContent += greeting[i];
+      }
+
+      i < greeting.length - 1 ? i++ : clearInterval(intvlId);
+    }
+
+    // Move pointer to next greeting
+    idx < greetings.length - 1 ? idx++ : idx = 0;
   }
+
 })

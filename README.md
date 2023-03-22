@@ -51,6 +51,7 @@ Credits:
 		Scrollex (github.com/ajlkn/jquery.scrollex)
 		Responsive Tools (github.com/ajlkn/responsive-tools)
 		Animations (https://alvarotrigo.com/blog/)
+		Menu (https://www.cssscript.com/expanding-dropdown-menu/)
 
 If you followed tutorials, include links to those here as well.
 

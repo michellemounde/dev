@@ -8691,7 +8691,8 @@ input, select, textarea {
 	height: 3.125rem;
 	width: 100%;
 	z-index: 100;
-	background-color: rgb(172, 171, 171);
+	background-color: rgb(172, 171, 171, 0.1);
+	backdrop-filter: blur(0.25rem);
 }
 
 	#navbar p,
@@ -8757,12 +8758,11 @@ input, select, textarea {
 		#navbar a {
 			text-decoration: none;
 			font-weight: 400;
+			cursor: pointer;
 		}
 
 			#navbar a:hover,
 			#navbar a:active {
-				animation:
-				colorize 3s linear infinite;
 				background-image: linear-gradient(
 					-225deg,
 					#231557 0%,
@@ -8777,11 +8777,13 @@ input, select, textarea {
 				color: #fff;
 			}
 
+
+
 	#navbar #hamburger-menu {
 		position: relative;
 		width: 3.75rem;
 		height: 3.125rem;
-		background-color: rgb(71, 211, 229);
+		background-color: rgb(39, 128, 139);
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -8842,7 +8844,8 @@ input, select, textarea {
 /* Footer */
 
 footer {
-	background-color: rgb(172, 171, 171);
+	background-color: rgb(172, 171, 171, 0.1);
+	backdrop-filter: blur(0.25rem);
 }
 
 	footer p {
@@ -8852,8 +8855,84 @@ footer {
 	}
 
 
-/* Mode */
+/* Back to Top Button */
 
-.mode {
-
+html,
+body {
+	scroll-behavior: smooth;
 }
+
+.button.top.small {
+	--offset: 10vh;
+	margin-top: calc(100vh + var(--offset));
+	position: fixed;
+	bottom: 1.25rem;
+	right: 5vw;
+	border-radius: 30%;
+	height: 5vh;
+	width: 5vh;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+	.button.top.small:hover,
+	.button.top.small:active {
+		background-color: black;
+	}
+
+	.button.top.small > svg {
+		width: 2.5vh;
+		height: 2.5vh;
+		color: #47D3E5;
+	}
+
+
+/* Theme Toggle */
+.theme-toggle {
+	border-color: black;
+	box-shadow: none;
+	display: flex;
+	flex-flow: row nowrap;
+	border: none;
+	background: none;
+	width: 5rem;
+	height: 2.5rem;
+	padding: 0;
+}
+
+	.theme-toggle:hover,
+	.theme-toggle:active {
+		box-shadow: none;
+		color: black !important;
+	}
+
+	.theme-toggle div {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 50%;
+		height: inherit;
+	}
+
+		.theme-toggle div.light.active {
+			background-color: white;
+		}
+
+			.theme-toggle div.light svg {
+				color: black;
+			}
+
+
+		.theme-toggle div.dark.active {
+			background-color: black;
+		}
+
+			.theme-toggle div.dark.active svg {
+				color: white;
+			}
+
+			.theme-toggle div.dark svg {
+				color: black;
+			}

@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  let menu = document.querySelector("#hamburger-menu");
-  let nav = document.querySelector("#navbar");
+  const menu = document.querySelector("#hamburger-menu");
+  const nav = document.querySelector("#navbar");
 
   menu.onclick = function () {
     nav.classList.toggle("active");

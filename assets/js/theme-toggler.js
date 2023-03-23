@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const themeToggle = document.querySelector(".theme-toggle");
   const lightTheme = document.querySelector("div.light");
   const darkTheme = document.querySelector("div.dark");
 

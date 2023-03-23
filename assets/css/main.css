@@ -8924,6 +8924,11 @@ body {
 				color: black;
 			}
 
+			a.button.primary {
+				background-color: #00252E;
+				color: white;
+			}
+
 
 		.theme-toggle div.dark.active {
 			background-color: black;

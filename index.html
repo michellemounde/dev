@@ -41,10 +41,10 @@
 	<body class="is-preload">
 		<!-- Navbar -->
 		<nav id="navbar">
-			<p class="name">
+			<div class="name">
 				<span class="colorize">M</span>ichelle
 				<span class="colorize">M</span>ounde
-			</p>
+			</div>
 
 			<ul class="menu">
 				<li><a href="#about">About</a></li>
@@ -83,7 +83,7 @@
 		</nav>
 
 		<!-- Wrapper -->
-		<div id="wrapper" class="divided">
+		<main id="wrapper" class="divided">
 
 			<!-- About -->
 			<section id="about" class="main banner style3 orient-left content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
@@ -213,93 +213,71 @@
 					<h2>Skills</h2>
 					<h3>Programming Languages & Tools</h3>
 					<div class="items style3 small onscroll-fade-in">
-						<section>
 							<img alt="JavaScript logo" role="img"
 										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-						</section>
-						<section>
+
 							<img alt="Python logo" role="img"
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
-						</section>
-						<section>
+
 							<img alt="NodeJS logo" role="img"
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
-						</section>
-						<section>
+
 							<img alt="React logo" role="img"
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
-						</section>
-						<section>
+
 							<img alt="ExpressJS logo" role="img"
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" />
-						</section>
-						<section>
+
 							<img alt="Redux logo" role="img"
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" />
-						</section>
-						<section>
+
 							<img alt="HTML5 logo" role="img"
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
-						</section>
-						<section>
+
 							<img alt="CSS3 logo" role="img"
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
-						</section>
-						<section>
-							<img alt="SQL logo" src="assets/img/sql-server.png" />
+
+							<img id="sql" alt="SQL logo" src="assets/img/sql-server.png" />
 								<a hidden aria-label="SQL logo attribution" href="https://www.flaticon.com/free-icons/database" title="database icons">
 										Database icons created by juicy_fish - Flaticon
 								</a>
-							<h3>SQL</h3>
-						</section>
-						<section>
+
 							<img alt="SQLite logo" role="img"
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original-wordmark.svg" />
-						</section>
-						<section>
+
 							<img alt="PostgreSQL logo" role="img"
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" />
-						</section>
-						<section>
+
 							<img alt="NPM logo" role="img"
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" />
-						</section>
-						<section>
+
 							<img alt="Mocha logo" role="img"
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mocha/mocha-plain.svg" />
-						</section>
-						<section>
+
 							<img alt="Docker logo" role="img"
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg" />
-						</section>
-						<section>
+
 							<img alt="Git logo" role="img"
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" />
-						</section>
-						<section>
+
 							<img alt="Github logo" role="img"
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
-						</section>
-						<section>
+
 							<img alt="Flask logo" role="img"
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" />
-						</section>
-						<section>
+
 							<img alt="Sequelize logo" role="img"
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original-wordmark.svg" />
-						</section>
-						<section>
+
 							<img alt="SQLAlchemy logo" role="img"
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original-wordmark.svg" />
-						</section>
-						<section>
+
 							<img alt="Pytest logo" role="img"
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-original-wordmark.svg" />
-						</section>
-						<section>
+
 							<img alt="Visual Studio Code logo" role="img"
 								src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" />
-						</section>
+
 					</div>
 				</div>
 			</section>
@@ -367,42 +345,39 @@
 				</div>
 			</section>
 
-			<!-- Footer -->
-			<footer class="wrapper style1 align-center">
-				<div>
-					<p>
-						&copy;
-						<script>document.write(new Date().getFullYear())</script>
-						Built with ❤️💛🧡 by Michelle Mounde - All Rights Reserved.
-					</p>
+			<!-- Back to Top button -->
+			<a href="#" class="top button small primary">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+					<!-- Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+					<path fill="currentColor"
+						d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3 329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160zm160 352l-160-160c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 329.4 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3z"/>
+				</svg>
+			</a>
 
-					<p>Design: <a href="https://html5up.net">HTML5 UP</a></p>
-				</div>
-			</footer>
+		</main>
 
-			<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/change-greeting.js"></script>
-			<script src="assets/js/menu-activation-deactivation.js"></script>
-			<script src="assets/js/theme-toggler.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<!-- Footer -->
+		<footer class="wrapper style1 align-center">
+				<p>
+					&copy;
+					<script>document.write(new Date().getFullYear())</script>
+					Built with ❤️💛🧡 by Michelle Mounde - All Rights Reserved.
+				</p>
 
-		</div>
+				<p>Design: <a href="https://html5up.net">HTML5 UP</a></p>
+		</footer>
 
-		<!-- Back to Top button -->
-		<a href="#" class="top button small primary">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-				<!-- Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-				<path fill="currentColor"
-					d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3 329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160zm160 352l-160-160c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 329.4 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3z"/>
-			</svg>
-		</a>
-
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/change-greeting.js"></script>
+		<script src="assets/js/menu-activation-deactivation.js"></script>
+		<script src="assets/js/theme-toggler.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>

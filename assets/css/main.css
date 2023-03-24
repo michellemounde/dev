@@ -8610,73 +8610,82 @@ input, select, textarea {
 
 /* Projects */
 
-	#projects h2 + h3 {
-		text-decoration: underline;
-	}
+#projects h2 + h3 {
+	text-decoration: underline;
+}
 
 
 /* Logos */
 
-	#education img,
-	#skills img {
-		height: 6.25rem;
-		width: 6.25rem;
+#education img,
+#skills img {
+	height: 13.5vh;
+	width: 15vh;
+	padding: 2vh 2vh 0.2vh 2vh;
+}
+
+	#education img#uon {
+		width: 18.5vh;
 	}
 
-		#education img#uon {
-			width: 7.8125rem;
-		}
+#skills img {
+	margin: 2vh;
+}
+
+	#skills img#sql {
+		object-fit: contain;
+	}
 
 
 /* Greeting */
 
-	.typewriter {
-		animation:
-			cursor 1.25s step-end infinite,
-			typing 3s steps(24, end) infinite alternate,
-			colorize 3s linear infinite;
-		background-image: linear-gradient(
-			-225deg,
-			#231557 0%,
-			#44107a 29%,
-			#ff1361 67%,
-			#fff800 100%
-		);
-		background-size: 200% auto;
-		background-clip: text;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		border-right: 0.2em solid rgba(71, 211, 229, 0.75);
-		color: #fff;
-		font-family: "Chakra Petch", sans-serif;
-		font-size: larger;
-		font-weight: bold;
-		letter-spacing: 0.2em;
-		overflow: hidden;
-		white-space: nowrap;
-	}
+.typewriter {
+	animation:
+		cursor 1.25s step-end infinite,
+		typing 3s steps(24, end) infinite alternate,
+		colorize 3s linear infinite;
+	background-image: linear-gradient(
+		-225deg,
+		#231557 0%,
+		#44107a 29%,
+		#ff1361 67%,
+		#fff800 100%
+	);
+	background-size: 200% auto;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	border-right: 0.2em solid rgba(71, 211, 229, 0.75);
+	color: #fff;
+	font-family: "Chakra Petch", sans-serif;
+	font-size: larger;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	overflow: hidden;
+	white-space: nowrap;
+}
 
-	/* Animation */
+/* Animation */
 
-		/* text animation */
+	/* text animation */
 
-			@keyframes typing {
-				from { width: 0; }
-				to { width: 100%; }
-			}
+		@keyframes typing {
+			from { width: 0; }
+			to { width: 100%; }
+		}
 
-		/* cursor animation */
+	/* cursor animation */
 
-			@keyframes cursor {
-				from, to { border-color: transparent; }
-				50% { border-color: rgba(71, 211, 229, 0.75); }
-			}
+		@keyframes cursor {
+			from, to { border-color: transparent; }
+			50% { border-color: rgba(71, 211, 229, 0.75); }
+		}
 
-		/* color animation */
+	/* color animation */
 
-			@keyframes colorize {
-				to { background-position: 200% center; }
-			}
+		@keyframes colorize {
+			to { background-position: 200% center; }
+		}
 
 
 /* Navbar */
@@ -8695,19 +8704,19 @@ input, select, textarea {
 	backdrop-filter: blur(0.25rem);
 }
 
-	#navbar p,
+	#navbar .name,
 	#navbar ul {
 		margin: 0;
 	}
 
-	#navbar p {
+	#navbar .name {
 		font-family: "Chakra Petch", sans-serif;
 		font-size: 1.5rem;
 		font-weight: bold;
 		padding: 0 0 0 1rem;
 	}
 
-		#navbar > p .colorize {
+		#navbar > .name .colorize {
 			animation:
 				colorize 3s linear infinite;
 			background-image: linear-gradient(
@@ -8845,7 +8854,7 @@ input, select, textarea {
 
 footer {
 	background-color: rgb(172, 171, 171, 0.1);
-	backdrop-filter: blur(0.25rem);
+	box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.375);
 }
 
 	footer p {

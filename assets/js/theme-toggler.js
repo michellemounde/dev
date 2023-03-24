@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
       section.style.color = "black"
     });
 
+    document.querySelector("footer").style.backgroundColor = "#EBEAEA"
+
     document.querySelectorAll("a").forEach(link => {
       link.style.color = "black"
     });
@@ -51,6 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll("nav, footer").forEach(section => {
       section.style.color = "white"
     });
+
+    document.querySelector("footer").style.backgroundColor = "#004252"
 
     document.querySelectorAll("a").forEach(link => {
       link.style.color = "white"

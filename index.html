@@ -31,7 +31,7 @@
 		<!-- Google fonts-->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400&family=Chakra+Petch:wght@300;400;500;600;700&family=Outfit:wght@200;300;400;500;600&family=Source+Sans+Pro:wght@200;300;400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400&family=Chakra+Petch:wght@300;400;500;600;700&family=Outfit:wght@200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@200;300;400&display=swap" rel="stylesheet">
 
 		<!-- Core theme CSS -->
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -52,6 +52,7 @@
 				<li><a href="#skills">Skills</a></li>
 				<!-- TODO: Add once you have experience <li><a href="#experience">Experience</a></li> -->
 				<li><a href="#education">Education</a></li>
+				<!-- TODO: Add once you have recognitions & awards <li><a href="#experience">Awards, Certificates & Recognition</a></li> -->
 				<li><a href="#resume">Resume</a></li>
 				<li><a href="#contact">Contact me</a></li>
 			</ul>
@@ -78,7 +79,7 @@
 			</button>
 
 			<!-- Hamburger menu for smaller devices -->
-			<div id="hamburger-menu"></div>
+			<div id="hamburger-menu" aria-label="=Navigation menu for small devices" title="Navigation menu for small devices"></div>
 
 		</nav>
 
@@ -113,96 +114,220 @@
 			</section>
 
 			<!-- TODO: Add once you have experience: Experience -->
-			<!-- <section> -->
-					<!-- <h2>Experience</h2> -->
-			<!-- </section> -->
+			<!-- <section>
+						<header>
+							<h2>Experience</h2>
+						</header>
+
+						<div class="content">
+							<dl>
+								<dt>Work Experience 3 Placeholder Title</dt>
+								<dd>
+									<p>Work Experience 3 Placeholder Description</p>
+								</dd>
+								<dt>Work Experience 2 Placeholder Title</dt>
+								<dd>
+									<p>Work Experience 2 Placeholder Description</p>
+								</dd>
+								<dt>Work Experience 1 Placeholder Title</dt>
+								<dd>
+									<p>Work Experience 1 Placeholder Description</p>
+								</dd>
+							</dl>
+						</div>
+			</section> -->
 			<!--TODO: End of future experience section -->
 
 			<!-- Projects -->
 			<section id="projects" class="main wrapper style1">
 				<div class="inner">
 
-					<div class="content align-center">
+					<header class="content align-center">
 						<h2 class="align-center">Projects</h2>
 						<h3>Check out some of the things I've built</h3>
-					</div>
+					</header>
 
 					<!-- TODO: Add Group Projects, Professional Projects + Open Source Contribs -->
+					<!-- Group Projects-->
+					<!-- <div id="group-projects">
+						<header>
+							<h4>Group Projects</h4>
+						</header>
 
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h3>Project-1 Placeholder Title</h3>
-							<p>Project-1 Placeholder Description</p>
-							<p>Languages & Tools used:</p>
-							<ul class="actions">
-								<li>
-									<a href="#" class="button primary">
-										<i class="icon solid style1 fa-link"><span class="label">Live link for Project-1</span></i>
-										&nbsp; Live
-									</a>
-								</li>
-								<li>
-									<a href="#" class="button primary">
-										<i class="icon brands style1 fa-github"><span class="label">Source code for Project-1</span></i>
-										&nbsp; Code
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="assets/img/spotlight01.jpg" alt="Project-1 Demo GIF" />
-						</div>
-					</section>
+						<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+							<div class="content">
+								<h5>Project-1 Placeholder Title</h5>
+								<p>Project-1 Placeholder Description</p>
+								<p>Languages & Tools used:</p>
+								<ul class="actions">
+									<li>
+										<a href="#" class="button primary">
+											<i class="icon solid style1 fa-link"><span class="label">Live link for Project-1</span></i>
+											&nbsp; Live
+										</a>
+									</li>
+									<li>
+										<a href="#" class="button primary">
+											<i class="icon brands style1 fa-github"><span class="label">Source code for Project-1</span></i>
+											&nbsp; Code
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="image">
+								<img src="assets/img/spotlight01.jpg" alt="Project-1 Demo GIF" />
+							</div>
+						</section>
+					</div> -->
 
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h3>Project-2 Placeholder Title</h3>
-							<p>Project-2 Placeholder Description</p>
-							<p>Languages & Tools used:</p>
-							<ul class="actions">
-								<li>
-									<a href="#" class="button primary">
-										<i class="icon solid style1 fa-link"><span class="label">Live link for Project-1</span></i>
-										&nbsp; Live
-									</a>
-								</li>
-								<li>
-									<a href="#" class="button primary">
-										<i class="icon brands style1 fa-github"><span class="label">Source code for Project-1</span></i>
-										&nbsp; Code
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="assets/img/spotlight02.jpg" alt="Project-2 Demo GIF" />
-						</div>
-					</section>
+					<!-- Work Projects-->
+					<!-- <div id="work-projects">
+						<header>
+							<h4>Work Projects</h4>
+						</header>
 
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h3>Project-3 Placeholder Title</h3>
-							<p>Project-3 Placeholder Description</p>
-							<p>Languages & Tools used:</p>
-							<ul class="actions">
-								<li>
-									<a href="#" class="button primary">
-										<i class="icon solid style1 fa-link"><span class="label">Live link for Project-1</span></i>
-										&nbsp; Live
-									</a>
-								</li>
-								<li>
-									<a href="#" class="button primary">
-										<i class="icon brands style1 fa-github"><span class="label">Source code for Project-1</span></i>
-										&nbsp; Code
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="assets/img/spotlight03.jpg" alt="Project-3 Demo GIF" />
-						</div>
-					</section>
+						<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+							<div class="content">
+								<h5>Project-1 Placeholder Title</h5>
+								<p>Project-1 Placeholder Description</p>
+								<p>Languages & Tools used:</p>
+								<ul class="actions">
+									<li>
+										<a href="#" class="button primary">
+											<i class="icon solid style1 fa-link"><span class="label">Live link for Project-1</span></i>
+											&nbsp; Live
+										</a>
+									</li>
+									<li>
+										<a href="#" class="button primary">
+											<i class="icon brands style1 fa-github"><span class="label">Source code for Project-1</span></i>
+											&nbsp; Code
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="image">
+								<img src="assets/img/spotlight01.jpg" alt="Project-1 Demo GIF" />
+							</div>
+						</section>
+					</div> -->
+
+					<!-- Open Source Contributions -->
+					<!-- <div id="open-source-contributions">
+						<header>
+							<h4>Open Source Contributions</h4>
+						</header>
+
+						<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+							<div class="content">
+								<h5>Project-1 Placeholder Title</h5>
+								<p>Project-1 Placeholder Description</p>
+								<p>Languages & Tools used:</p>
+								<ul class="actions">
+									<li>
+										<a href="#" class="button primary">
+											<i class="icon solid style1 fa-link"><span class="label">Live link for Project-1</span></i>
+											&nbsp; Live
+										</a>
+									</li>
+									<li>
+										<a href="#" class="button primary">
+											<i class="icon brands style1 fa-github"><span class="label">Source code for Project-1</span></i>
+											&nbsp; Code
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="image">
+								<img src="assets/img/spotlight01.jpg" alt="Project-1 Demo GIF" />
+							</div>
+						</section>
+					</div> -->
+					<!-- TODO: End of Group Projects, Professional Projects + Open Source Contribs -->
+
+					<!-- Personal Projects-->
+					<div id="personal-projects">
+						<header>
+							<h4>Personal Projects</h4>
+						</header>
+
+						<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+							<div class="content">
+								<h5>Project-1 Placeholder Title</h5>
+								<p>Project-1 Placeholder Description</p>
+								<p>Languages & Tools used:</p>
+								<ul class="actions">
+									<li>
+										<a href="#" class="button primary">
+											<i class="icon solid style1 fa-link"><span class="label">Live link for Project-1</span></i>
+											&nbsp; Live
+										</a>
+									</li>
+									<li>
+										<a href="#" class="button primary">
+											<i class="icon brands style1 fa-github"><span class="label">Source code for Project-1</span></i>
+											&nbsp; Code
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="image">
+								<img src="assets/img/spotlight01.jpg" alt="Project-1 Demo GIF" />
+							</div>
+						</section>
+
+						<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+							<div class="content">
+								<h5>Project-2 Placeholder Title</h5>
+								<p>Project-2 Placeholder Description</p>
+								<p>Languages & Tools used:</p>
+								<ul class="actions">
+									<li>
+										<a href="#" class="button primary">
+											<i class="icon solid style1 fa-link"><span class="label">Live link for Project-1</span></i>
+											&nbsp; Live
+										</a>
+									</li>
+									<li>
+										<a href="#" class="button primary">
+											<i class="icon brands style1 fa-github"><span class="label">Source code for Project-1</span></i>
+											&nbsp; Code
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="image">
+								<img src="assets/img/spotlight02.jpg" alt="Project-2 Demo GIF" />
+							</div>
+						</section>
+
+						<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+							<div class="content">
+								<h5>Project-3 Placeholder Title</h5>
+								<p>Project-3 Placeholder Description</p>
+								<p>Languages & Tools used:</p>
+								<ul class="actions">
+									<li>
+										<a href="#" class="button primary">
+											<i class="icon solid style1 fa-link"><span class="label">Live link for Project-1</span></i>
+											&nbsp; Live
+										</a>
+									</li>
+									<li>
+										<a href="#" class="button primary">
+											<i class="icon brands style1 fa-github"><span class="label">Source code for Project-1</span></i>
+											&nbsp; Code
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="image">
+								<img src="assets/img/spotlight03.jpg" alt="Project-3 Demo GIF" />
+							</div>
+						</section>
+					</div>
+
+
 
 				</div>
 			</section>
@@ -210,8 +335,11 @@
 			<!-- Skills -->
 			<section id="skills" class="main wrapper style1 align-center">
 				<div class="inner">
-					<h2>Skills</h2>
-					<h3>Programming Languages & Tools</h3>
+					<header>
+						<h2>Skills</h2>
+						<h3>Programming Languages & Tools</h3>
+					</header>
+
 					<div class="items style3 small onscroll-fade-in">
 							<img alt="JavaScript logo" role="img"
 										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
@@ -284,9 +412,9 @@
 
 			<!-- Education -->
 			<section id="education" class="main wrapper style1 align-center">
-				<div class="inner">
+				<header class="inner">
 					<h2>Education</h2>
-				</div>
+				</header>
 
 				<div class="items style3 medium onscroll-fade-in">
 					<section>
@@ -305,7 +433,10 @@
 			<!-- Resume -->
 			<section id="resume" class="main wrapper style1 align-center">
 				<div class="inner">
-					<h2>Resume</h2>
+					<header>
+						<h2>Resume</h2>
+					</header>
+
 					<ul class="actions stacked">
 						<li>
 							<a
@@ -320,10 +451,32 @@
 				</div>
 			</section>
 
+			<!-- Awards, Certificates & Recognition -->
+			<!-- <section id="awards-recognition" class="main wrapper style1 align-center">
+				<header class="inner">
+					<h2>Awards, Certificates & Recognition</h2>
+				</header>
+
+				<div class="items style3 medium onscroll-fade-in">
+					<section>
+						<img src="assets/img/University-of-Nairobi-logo.png" alt="University of Nairobi logo" id="uon">
+						<h3>University of Nairobi</h3>
+						<p>BSc. in Quantity Surveying</p>
+					</section>
+					<section>
+						<img src="assets/img/app-academy-logo-red.png" alt="App Academy logo" id="aao">
+						<h3>App Academy Open</h3>
+						<p>Full-Stack Software Engineering (Online)</p>
+					</section>
+				</div>
+			</section> -->
+
 			<!-- Contact -->
 			<section id="contact" class="main wrapper style1 align-center">
 				<div class="inner medium">
-					<h2>Get in touch</h2>
+					<header>
+						<h2>Get in touch</h2>
+					</header>
 
 					<h3>Address</h3>
 					<p>
@@ -346,7 +499,7 @@
 			</section>
 
 			<!-- Back to Top button -->
-			<a href="#" class="top button small primary">
+			<a aria-label="Back to top button" title="Back to top button" href="#" class="top button small primary">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
 					<!-- Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
 					<path fill="currentColor"
@@ -361,7 +514,7 @@
 				<p>
 					&copy;
 					<script>document.write(new Date().getFullYear())</script>
-					Built with ❤️💛🧡 by Michelle Mounde - All Rights Reserved.
+					Redesigned & Redeveloped with ❤️💛🧡 by Michelle Mounde - All Rights Reserved.
 				</p>
 
 				<p>Design: <a href="https://html5up.net">HTML5 UP</a></p>

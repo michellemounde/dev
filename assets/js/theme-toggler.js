@@ -2,68 +2,33 @@ document.addEventListener("DOMContentLoaded", () => {
   const themeToggler = document.querySelector(".theme-toggle");
   const lightTheme = document.querySelector("div.light");
   const darkTheme = document.querySelector("div.dark");
+  const html = document.querySelector("html");
+  const buttons = document.querySelectorAll("a.button");
+
 
   lightTheme.onclick = function () {
-    darkTheme.classList.remove("active");
-    lightTheme.classList.add("active");
+    if (html.classList.contains("dark")) {
+      html.classList.remove("dark");
+    }
 
-    document.querySelectorAll("a.button").forEach(button => {
+    html.classList.add("light");
+
+    buttons.forEach(button => {
       button.classList.add("primary")
-      button.style.backgroundColor = "#00252E"
-    });
-    document.querySelector("a.top svg").style.color = "#47D3E5"
-
-    document.querySelector("#wrapper").style.backgroundColor = "white"
-    document.querySelector("#wrapper").style.color = "#4B4D4F"
-
-    document.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(heading => {
-      heading.style.color = "black"
-    });
-
-    document.querySelectorAll("nav, footer").forEach(section => {
-      section.style.color = "black"
-    });
-
-    document.querySelector(".name").style.color = "black"
-
-    document.querySelector("footer").style.backgroundColor = "#EBEAEA"
-
-    document.querySelectorAll("a").forEach(link => {
-      link.style.color = "black"
     });
 
     themeToggler.ariaLabel = "Change to dark mode";
     themeToggler.title = "Change to dark mode";
   };
 
+
   darkTheme.onclick = function () {
-    lightTheme.classList.remove("active");
-    darkTheme.classList.add("active");
+    html.classList.remove("light");
+    html.classList.add("dark");
 
-    document.querySelectorAll("a.button").forEach(button => {
+    buttons.forEach(button => {
       button.classList.remove("primary");
-      button.style.backgroundColor = "#B1C1C4"
-    });
-    document.querySelector("a.top svg").style.color = "black"
 
-
-    document.querySelector("#wrapper").style.backgroundColor = "#00252E"
-    document.querySelector("#wrapper").style.color = "#CFCFCF"
-
-    document.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(heading => {
-      heading.style.color = "#FCFCFC"
-    });
-
-    document.querySelectorAll("nav, footer").forEach(section => {
-      section.style.color = "#FCFCFC"
-    });
-
-    document.querySelector(".name").style.color = "#FCFCFC"
-
-    document.querySelector("footer").style.backgroundColor = "#004252"
-
-    document.querySelectorAll("a").forEach(link => {
-      link.style.color = "#FCFCFC"
     });
 
     themeToggler.ariaLabel = "Change to light mode";

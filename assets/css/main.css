@@ -8877,6 +8877,7 @@ footer {
 
 .button {
 	font-weight: 700;
+	font-size: 0.875rem;
 }
 
 
@@ -8914,6 +8915,106 @@ body {
 	}
 
 
+/* Themes */
+
+/* Light Theme */
+
+html.light {
+	background-color: rgb(255, 255, 255);
+	color: rgb(75, 77, 79);
+}
+
+	html.light #wrapper{
+		background-color: rgb(255, 255, 255);
+		color: rgb(75, 77, 79);
+	}
+
+	html.light nav {
+		color: rgb(0, 0, 0);
+	}
+
+	html.light footer {
+		background-color: rgba(172, 171, 171, 0.1);
+		color: rgb(0, 0, 0);
+	}
+
+	html.light h1,
+	html.light h2,
+	html.light h3,
+	html.light h4,
+	html.light h5,
+	html.light h6 {
+		color: rgb(0, 0, 0);
+	}
+
+	html.light a {
+		color: rgb(0, 0, 0);
+	}
+
+		html.light a.button.primary {
+			background-color: rgb(0, 37, 46);
+		}
+
+		html.light a.button.top.small svg {
+			color: rgb(71, 211, 229);
+		}
+
+	html.light div.light {
+		background-color: rgb(255, 255, 255);
+	}
+
+/* Dark Theme */
+
+html.dark {
+	background-color: rgb(0, 37, 46);
+	color: rgb(207, 207, 207);
+}
+
+	html.dark #wrapper{
+		background-color: rgb(0, 37, 46);
+		color: rgb(207, 207, 207);
+	}
+
+	html.dark nav {
+		color: rgb(252, 252, 252);
+	}
+
+	html.dark footer {
+		background-color: rgba(0, 66, 82);
+		color: rgb(252, 252, 252);
+	}
+
+	html.dark h1,
+	html.dark h2,
+	html.dark h3,
+	html.dark h4,
+	html.dark h5,
+	html.dark h6 {
+		color: rgb(252, 252, 252);
+	}
+
+	html.dark a {
+		color: rgb(252, 252, 252);
+	}
+
+		html.dark a.button {
+			background-color: rgb(177, 193, 196);
+		}
+
+		html.dark a.button.top.small svg {
+			color: rgb(0, 0, 0);
+		}
+
+	html.dark div.dark {
+		background-color: rgb(0, 0, 0);
+		color: rgb(255, 255, 255);
+	}
+
+		html.dark div.dark svg {
+			color: white;
+		}
+
+
 /* Theme Toggle */
 
 .theme-toggle {
@@ -8942,28 +9043,17 @@ body {
 		height: inherit;
 	}
 
-		.theme-toggle div.light.active {
-			background-color: white;
+		/* Light Theme Buttons */
+		.theme-toggle div.light svg {
+			color: black;
 		}
 
-			.theme-toggle div.light svg {
-				color: black;
-			}
-
-			a.button.primary {
-				background-color: #00252E;
-				color: white;
-			}
-
-
-		.theme-toggle div.dark.active {
-			background-color: black;
+		a.button.primary {
+			background-color: #00252E;
+			color: white;
 		}
 
-			.theme-toggle div.dark.active svg {
-				color: white;
-			}
-
-			.theme-toggle div.dark svg {
-				color: black;
-			}
+		/* Dark Theme Button */
+		.theme-toggle div.dark svg {
+			color: black;
+		}

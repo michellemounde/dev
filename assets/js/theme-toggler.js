@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     document.querySelector("#wrapper").style.backgroundColor = "#00252E"
-    document.querySelector("#wrapper").style.color = "#E8E8E8"
+    document.querySelector("#wrapper").style.color = "#CFCFCF"
 
     document.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(heading => {
       heading.style.color = "#FCFCFC"

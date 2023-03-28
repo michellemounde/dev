@@ -1063,8 +1063,8 @@ header p {
 
 #education img,
 #skills img {
-	height: 13.5vh;
-	width: 15vh;
+	height: 15vh;
+	width: 18.5vh;
 	padding: 2vh 2vh 0.2vh 2vh;
 }
 
@@ -1080,6 +1080,9 @@ header p {
 		object-fit: contain;
 	}
 
+	#skills img#redux {
+		object-fit: contain;
+	}
 
 /* Greeting */
 

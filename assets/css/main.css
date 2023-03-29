@@ -1332,11 +1332,6 @@ body {
 	justify-content: center;
 }
 
-	.button.top.small:hover,
-	.button.top.small:active {
-		background-color: rgb(0, 0, 0);
-	}
-
 	.button.top.small > svg {
 		width: 2.5vh;
 		height: 2.5vh;
@@ -1450,6 +1445,10 @@ html.dark {
 		background-color: rgb(177, 193, 196);
 	}
 
+	html.dark *::-webkit-scrollbar-thumb {
+		background-color: rgba(0, 0, 0, 0.55);
+	}
+
 	html.dark div.dark {
 		background-color: rgb(0, 0, 0);
 		color: rgb(255, 255, 255);
@@ -1510,7 +1509,7 @@ html.dark {
 
 	* {
 		scrollbar-width: auto;
-		scrollbar-color: rgb(119, 118, 118) rgba(172, 171, 171, 0);
+		scrollbar-color: rgba(119, 118, 118, 0.65) rgba(172, 171, 171, 0.5);
 	}
 
 	/* Works on Chrome, Edge, and Safari */
@@ -1520,12 +1519,11 @@ html.dark {
 	}
 
 	*::-webkit-scrollbar-track {
-		background: rgba(172, 171, 171, 0);
-
+		background: rgba(172, 171, 171, 0.5);
+		border-radius: 1.5vw;
 	}
 
 	*::-webkit-scrollbar-thumb {
-		background-color: rgb(119, 118, 118);
+		background-color: rgba(119, 118, 118, 0.65);
 		border-radius: 1.5vw;
-		border: 0.25vw solid rgba(172, 171, 171, 0.1);
 	}

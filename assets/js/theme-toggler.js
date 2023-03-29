@@ -1,13 +1,12 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const themeToggler = document.querySelector(".theme-toggle");
-  const lightTheme = document.querySelector("div.light");
-  const darkTheme = document.querySelector("div.dark");
-  const html = document.querySelector("html");
-  const buttons = document.querySelectorAll("a.button");
-  const reduxLogo = document.querySelector("#redux")
+const themeToggler = document.querySelector(".theme-toggle");
+const lightTheme = document.querySelector("div.light");
+const darkTheme = document.querySelector("div.dark");
+const html = document.querySelector("html");
+const buttons = document.querySelectorAll("a.button");
+const reduxLogo = document.querySelector("#redux")
 
-
-  lightTheme.onclick = function () {
+function activateLightTheme() {
+  lightTheme.addEventListener("click", () => {
     if (html.classList.contains("dark")) {
       html.classList.remove("dark");
     }
@@ -22,10 +21,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     themeToggler.ariaLabel = "Change to dark mode";
     themeToggler.title = "Change to dark mode";
-  };
+  });
+}
 
 
-  darkTheme.onclick = function () {
+function activateDarkTheme() {
+  darkTheme.addEventListener("click", () => {
     html.classList.remove("light");
     html.classList.add("dark");
 
@@ -37,6 +38,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     themeToggler.ariaLabel = "Change to light mode";
     themeToggler.title = "Change to light mode";
-  };
+  });
+}
 
-})
+export {
+  activateDarkTheme,
+  activateLightTheme
+};

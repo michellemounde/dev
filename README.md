@@ -2,7 +2,7 @@
 This is the second version of my Portfolio website displaying my experience and expertise as a Software Engineer.
 
 The GIF below is an example of how the project works:
-![Michelle Mounde's Portfolio Demo](https://github.com/michellemounde/michellemounde.github.io/main/assets/img/Michelle_Mounde_Portfolio.gif?raw=true "Michelle Mounde's Portfolio Demo")
+![Michelle Mounde's Portfolio Demo](https://github.com/michellemounde/michellemounde.github.io/blob/main/assets/img/Michelle_Mounde_Portfolio.gif?raw=true "Michelle Mounde's Portfolio Demo")
 
 To view in VSCode, right click on the README.md file and select "Open Preview".
 

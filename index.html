@@ -4,7 +4,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html class="light">
+<html class="light" lang="en">
 	<head>
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-50SJ3TFQN2"></script>
@@ -20,7 +20,7 @@
 		<title>Michelle Mounde | Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="description" content="Michelle Mounde's Portfolio">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<!-- Favicon -->
 		<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
@@ -75,9 +75,8 @@
 				</button>
 
 				<!-- Hamburger Menu -->
-				<a id="hamburger-menu-button">
-					<div id="hamburger-menu" aria-label="=Navigation menu for small devices" title="Navigation menu for small devices"></div>
-				</a>
+				<button id="hamburger-menu" aria-label="hamburger-menu" title="Hamburger menu"></button>
+
 
 			</nav>
 		</header>
@@ -552,7 +551,8 @@
 		<footer class="wrapper align-center">
 				<p>
 					&copy;
-					<script>document.write(new Date().getFullYear())</script>
+					<script defer src="assets/js/add-year.js"></script>
+					<span id="year"></span>
 					Redesigned & Redeveloped with ❤️💛🧡 by Michelle Mounde - All Rights Reserved.
 				</p>
 

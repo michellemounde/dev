@@ -1068,30 +1068,15 @@ header p {
 #skills img {
 	height: 15vh;
 	width: 18.5vh;
+	-o-object-fit: contain;
+	   object-fit: contain;
 	padding: 2vh 2vh 0.2vh 2vh;
 }
-
-
-#education img#uon {
-		width: 18.5vh;
-	}
 
 
 #skills img {
 	margin: 2vh;
 }
-
-
-#skills img#sql {
-		-o-object-fit: contain;
-		   object-fit: contain;
-	}
-
-
-#skills img#redux {
-		-o-object-fit: contain;
-		   object-fit: contain;
-	}
 
 
 /* Greeting */
@@ -1287,6 +1272,7 @@ header p {
 
 
 #navbar #hamburger-menu {
+		border-radius: 0%;
 		position: relative;
 		width: 3.75rem;
 		height: 3.125rem;

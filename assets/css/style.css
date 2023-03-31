@@ -1410,7 +1410,7 @@ html.light #wrapper{
 	}
 
 
-html.light nav {
+html.light #navbar {
 		color: rgb(0, 0, 0);
 	}
 
@@ -1475,7 +1475,7 @@ html.dark #wrapper{
 	}
 
 
-html.dark nav {
+html.dark #navbar {
 		color: rgb(252, 252, 252);
 	}
 

@@ -1343,7 +1343,7 @@ html.light {
 		color: rgb(75, 77, 79);
 	}
 
-	html.light nav {
+	html.light #navbar {
 		color: rgb(0, 0, 0);
 	}
 
@@ -1397,7 +1397,7 @@ html.dark {
 		color: rgb(207, 207, 207);
 	}
 
-	html.dark nav {
+	html.dark #navbar {
 		color: rgb(252, 252, 252);
 	}
 

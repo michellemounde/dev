@@ -72,8 +72,11 @@ If your project has a lot of features, list them here.
 3. Typewriter effect on greeting
 
 ## Upcoming Features
+- Add search bar + functionality
+- Highlight different main sections in different colours to match current theme
+- Add working contact form
+- Add highlight nav link on scroll based on what is at top section of screen and how close to end of page
 - Optimize colours on both dark and light theme for accesibility
-- Check accessibility with tools
 
 ## Feedback
 Feel free to send me feedback by filing an issue. Feature requests are always welcome. If you wish to contribute or if there's anything you would like to chat about, send me an email @[michellemounde@gmail.com](mailto:michellemounde@gmail.com)!

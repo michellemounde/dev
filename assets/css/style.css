@@ -1573,12 +1573,11 @@ html.dark div.dark svg {
 
 
 .theme-toggle div.light svg {
-			color: rgb(0, 0, 0);
+			color: rgb(238, 179, 15);
 		}
 
 
 a.button.primary {
-			background-color: rgb(0, 37, 46);
 			color: rgb(255, 255, 255);
 		}
 

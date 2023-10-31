@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
-  "version": "2.0.0",
-  "description": "Michelle Mounde's prtfolio",
+  "version": "2.1.0",
+  "description": "Michelle Mounde's portfolio",
   "main": "index.js",
   "scripts": {
     "postcss:watch": "postcss ./assets/css/main.css --output ./assets/css/style.css --config config --watch"

@@ -34,7 +34,7 @@ To install the repository, follow these steps:
 
 1. Fork the repo
 2. Create a new branch (git checkout -b [task])
-	- [task] can include but are not limited to improve-features, bug-fixes & docs-updates
+    - [task] can include but are not limited to improve-features, bug-fixes & docs-updates
 3. Make the appropriate changes in the files
 4. Commit your changes (git commit -am 'Improve feature')
 5. Push to the branch (git push origin improve-feature)
@@ -48,15 +48,15 @@ Open my [Portfolio](https://michellemounde.dev) and scroll or use the navigation
 
 Credits:
 
-	Design:
-		HTML5UP (html5up.net)
+    Design:
+        HTML5UP (html5up.net)
 
-	Icons:
-		Font Awesome (fontawesome.io)
+    Icons:
+        Font Awesome (fontawesome.io)
 
-	Other:
-		Animations tutorial: (https://alvarotrigo.com/blog/)
-		Menu tutorial: (https://www.cssscript.com/expanding-dropdown-menu/)
+    Other:
+        Animations tutorial: (https://alvarotrigo.com/blog/)
+        Menu tutorial: (https://www.cssscript.com/expanding-dropdown-menu/)
 
 ## Technologies
 - JavaScript

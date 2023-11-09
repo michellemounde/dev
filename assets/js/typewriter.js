@@ -22,25 +22,25 @@ Hello in:
 */
 
 const greetings = [
-  'Hi',
-  'Sasa',
-  'Bonjour',
-  'Kumusta',
-  'Ndewo',
-  'Guten tag',
-  'नमस्ते',
-  'Dumela',
-  'Ciao',
-  'こんにちは',
-  'Mwaramutse',
-  'Hola',
-  '안녕하세요',
-  'Hallo',
-  'Olá',
-  '你好',
-  'Hej',
-  'Aloha',
-  'Hei'
+  "Hi",
+  "Sasa",
+  "Bonjour",
+  "Kumusta",
+  "Ndewo",
+  "Guten tag",
+  "नमस्ते",
+  "Dumela",
+  "Ciao",
+  "こんにちは",
+  "Mwaramutse",
+  "Hola",
+  "안녕하세요",
+  "Hallo",
+  "Olá",
+  "你好",
+  "Hej",
+  "Aloha",
+  "Hei"
 ]
 
 

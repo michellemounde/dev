@@ -22,60 +22,67 @@ Hello in:
 */
 
 const greetings = [
-  "Hi",
-  "Sasa",
-  "Bonjour",
-  "Kumusta",
-  "Ndewo",
-  "Guten tag",
-  "नमस्ते",
-  "Dumela",
-  "Ciao",
-  "こんにちは",
-  "Mwaramutse",
-  "Hola",
-  "안녕하세요",
-  "Hallo",
-  "Olá",
-  "你好",
-  "Hej",
-  "Aloha",
-  "Hei"
-]
+  'Hi',
+  'Sasa',
+  'Bonjour',
+  'Kumusta',
+  'Ndewo',
+  'Guten tag',
+  'नमस्ते',
+  'Dumela',
+  'Ciao',
+  'こんにちは',
+  'Mwaramutse',
+  'Hola',
+  '안녕하세요',
+  'Hallo',
+  'Olá',
+  '你好',
+  'Hej',
+  'Aloha',
+  'Hei',
+];
 
-
-const elem = document.getElementById("greeting");
+const elem = document.getElementById('greeting');
 let idx = 0;
 
-export default function typewriter() {
-  setInterval(changeGreeting, 3500);
-}
-
 function changeGreeting() {
-  let greeting = greetings[idx];
-  let intvlId = setInterval(removeChar, 1500/elem.textContent.length)
+  const greeting = greetings[idx];
+  let intvlId = setInterval(removeChar, 1500 / elem.textContent.length);
 
-  let i = elem.textContent.length - 1
-
-  function removeChar() {
-    elem.textContent = elem.textContent.slice(0, i)
-
-    if (i > 0) {
-      i--
-    } else {
-      clearInterval(intvlId);
-      intvlId = setInterval(addChar, 1500/greeting.length)
-    }
-  }
+  let i = elem.textContent.length - 1;
 
   function addChar() {
     if (greeting[i]) {
       elem.textContent += greeting[i];
     }
 
-    i < greeting.length - 1 ? i++ : clearInterval(intvlId);
+    if (i < greeting.length - 1) {
+      i += 1;
+    } else {
+      clearInterval(intvlId);
+    }
+  }
+
+  function removeChar() {
+    elem.textContent = elem.textContent.slice(0, i);
+
+    if (i > 0) {
+      i -= 1;
+    } else {
+      clearInterval(intvlId);
+      intvlId = setInterval(addChar, 1500 / greeting.length);
+    }
   }
 
   // Move pointer to next greeting
-  idx < greetings.length - 1 ? idx++ : idx = 0;
+  if (idx < greetings.length - 1) {
+    idx += 1;
+  } else {
+    idx = 0;
+  }
+}
+
+export default function typewriter() {
+  setInterval(changeGreeting, 3500);
 }

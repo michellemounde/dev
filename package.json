@@ -4,7 +4,9 @@
   "description": "Michelle Mounde's portfolio",
   "main": "index.js",
   "scripts": {
-    "postcss:watch": "postcss ./assets/css/main.css --output ./assets/css/style.css --config config --watch"
+    "postcss:watch": "postcss ./assets/css/main.css --output ./assets/css/style.css --config config --watch",
+    "lint": "eslint . --ext .jsx,.js",
+    "lint:fix": "eslint . --fix --ext .jsx,.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +15,8 @@
     "@fullhuman/postcss-purgecss": "^5.0.0",
     "autoprefixer": "^10.4.14",
     "cssnano": "^6.0.0",
+    "eslint": "^8.54.0",
+    "eslint-config-google": "^0.14.0",
     "postcss": "^8.4.21",
     "postcss-import": "^15.1.0",
     "stylelint": "^15.3.0"

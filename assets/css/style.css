@@ -441,13 +441,33 @@ dl {
 
 dl dt {
         display: block;
-        font-weight: 400;
+        font-weight: 500;
+        color: rgb(0, 0, 0);
         margin: 0 0 1rem 0;
     }
 
 
 dl dd {
         margin-left: 2rem;
+    }
+
+
+dl.style2 dt {
+        width: 25%;
+        float: left;
+    }
+
+
+dl.style2 dd {
+        width: 70%;
+        float: left;
+    }
+
+
+dl.style2:after {
+        content: "";
+        display: block;
+        clear: both;
     }
 
 

@@ -452,25 +452,6 @@ dl dd {
     }
 
 
-dl.style2 dt {
-        width: 25%;
-        float: left;
-    }
-
-
-dl.style2 dd {
-        width: 70%;
-        float: left;
-    }
-
-
-dl.style2:after {
-        content: "";
-        display: block;
-        clear: both;
-    }
-
-
 ul.alt li {
     border-top-color: rgba(0, 0, 0, 0.2);
 }

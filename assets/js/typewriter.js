@@ -43,43 +43,47 @@ const greetings = [
   'Hei',
 ];
 
-const elem = document.getElementById('greeting');
 let idx = 0;
 
 function changeGreeting() {
+  const elem = document.getElementById('greeting');
+
   const greeting = greetings[idx];
-  let intvlId = setInterval(removeChar, 1500 / elem.textContent.length);
 
-  let i = elem.textContent.length - 1;
+  if (elem) {
+    let intvlId = setInterval(removeChar, 1500 / elem.textContent.length);
 
-  function addChar() {
-    if (greeting[i]) {
-      elem.textContent += greeting[i];
+    let i = elem.textContent.length - 1;
+
+    function addChar() {
+      if (greeting[i]) {
+        elem.textContent += greeting[i];
+      }
+
+      if (i < greeting.length - 1) {
+        i += 1;
+      } else {
+        clearInterval(intvlId);
+      }
     }
 
-    if (i < greeting.length - 1) {
-      i += 1;
+    function removeChar() {
+      elem.textContent = elem.textContent.slice(0, i);
+
+      if (i > 0) {
+        i -= 1;
+      } else {
+        clearInterval(intvlId);
+        intvlId = setInterval(addChar, 1500 / greeting.length);
+      }
+    }
+
+    // Move pointer to next greeting
+    if (idx < greetings.length - 1) {
+      idx += 1;
     } else {
-      clearInterval(intvlId);
+      idx = 0;
     }
-  }
-
-  function removeChar() {
-    elem.textContent = elem.textContent.slice(0, i);
-
-    if (i > 0) {
-      i -= 1;
-    } else {
-      clearInterval(intvlId);
-      intvlId = setInterval(addChar, 1500 / greeting.length);
-    }
-  }
-
-  // Move pointer to next greeting
-  if (idx < greetings.length - 1) {
-    idx += 1;
-  } else {
-    idx = 0;
   }
 }
 

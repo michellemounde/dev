@@ -1,23 +1,18 @@
-const themeToggler = document.querySelector('.theme-toggle');
-const lightTheme = document.querySelector('div.light');
-const darkTheme = document.querySelector('div.dark');
-const html = document.querySelector('html');
-const buttons = document.querySelectorAll('a.button');
-const reduxLogo = document.querySelector('#redux');
-
 function activateLightTheme() {
-  lightTheme.addEventListener('click', () => {
-    if (html.classList.contains('dark')) {
-      html.classList.remove('dark');
-    }
+  const html = document.querySelector('html');
+  const buttons = document.querySelectorAll('a.button');
+  const themeToggler = document.getElementById('theme-toggle-button');
+  const lightTheme = themeToggler.querySelector('div.light-theme');
 
-    html.classList.add('light');
+  lightTheme.addEventListener('click', () => {
+    if (html.classList.contains('dark-theme')) {
+      html.classList.remove('dark-theme');
+    }
+    html.classList.add('light-theme');
 
     buttons.forEach((button) => {
       button.classList.add('primary');
     });
-
-    reduxLogo.src = 'https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo-title-dark.png';
 
     themeToggler.ariaLabel = 'Change to dark mode';
     themeToggler.title = 'Change to dark mode';
@@ -25,15 +20,20 @@ function activateLightTheme() {
 }
 
 function activateDarkTheme() {
+  const html = document.querySelector('html');
+  const buttons = document.querySelectorAll('a.button');
+  const themeToggler = document.getElementById('theme-toggle-button');
+  const darkTheme = themeToggler.querySelector('div.dark-theme');
+
   darkTheme.addEventListener('click', () => {
-    html.classList.remove('light');
-    html.classList.add('dark');
+    if (html.classList.contains('light-theme')) {
+      html.classList.remove('light-theme');
+    }
+    html.classList.add('dark-theme');
 
     buttons.forEach((button) => {
       button.classList.remove('primary');
     });
-
-    reduxLogo.src = 'https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo-title-light.png';
 
     themeToggler.ariaLabel = 'Change to light mode';
     themeToggler.title = 'Change to light mode';

@@ -42,7 +42,7 @@ To install the repository, follow these steps:
 
 ## Usage
 
-Open my [Portfolio](https://michellemounde.dev) and scroll or use the navigation menu to explore my dynamic website portfolio.
+Open my [Portfolio](https://michellemounde.github.io/portfolio/) and scroll or use the navigation menu to explore my dynamic website portfolio.
 
 ## Acknowledgements
 

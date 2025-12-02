@@ -34,5 +34,9 @@
       "declaration-no-important": true,
       "font-family-name-quotes": "always-unless-keyword"
     }
+  },
+  "dependencies": {
+    "dompurify": "^3.3.0",
+    "marked": "^17.0.1"
   }
 }

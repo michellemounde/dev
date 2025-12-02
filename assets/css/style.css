@@ -1096,20 +1096,12 @@ header p {
 }
 
 @media screen and (min-width: 1281px) {
-    #navbar {
-        justify-content: space-evenly;
-    }
-
     #navbar #hamburger-menu {
         display: none;
     }
 }
 
 @media screen and (max-width: 1280px) {
-    #navbar {
-        justify-content: space-between;
-    }
-
     #navbar nav#hamburger-nav {
         display: none;
     }

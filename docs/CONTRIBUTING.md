@@ -1,6 +1,6 @@
 # Welcome to Michelle Mounde's Portfolio contributing guide
 
-Thank you for investing your time in contributing to our project! Any contribution you make will be reflected on [michellemounde.github.io/portfolio/](https://michellemounde.github.io/portfolio/) :sparkles:.
+Thank you for investing your time in contributing to our project! Any contribution you make will be reflected on [michellemounde.github.io/portfolio/](https://michellemounde.github.io/dev/) :sparkles:.
 
 Read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community approachable and respectable.
 
@@ -28,11 +28,11 @@ Check to see what type of contribution you are comfortable with before making ch
 
 #### Create a new issue
 
-If you spot a problem with the application, [search if an issue already exists](https://docs.github.com/en/github/searching-for-information-on-github/searching-on-github/searching-issues-and-pull-requests#search-by-the-title-body-or-comments). If a related issue doesn't exist, you can open a new issue using a relevant [issue form](https://github.com/michellemounde/Portfolio).
+If you spot a problem with the application, [search if an issue already exists](https://docs.github.com/en/github/searching-for-information-on-github/searching-on-github/searching-issues-and-pull-requests#search-by-the-title-body-or-comments). If a related issue doesn't exist, you can open a new issue using a relevant [issue form](https://github.com/michellemounde/dev).
 
 #### Solve an issue
 
-Scan through our [existing issues](https://github.com/michellemounde/Portfolio/issues) to find one that interests you. You can narrow down the search using `labels` as filters. As a general rule, we don’t assign issues to anyone. If you find an issue to work on, you are welcome to open a PR with a fix.
+Scan through our [existing issues](https://github.com/michellemounde/dev/issues) to find one that interests you. You can narrow down the search using `labels` as filters. As a general rule, we don’t assign issues to anyone. If you find an issue to work on, you are welcome to open a PR with a fix.
 
 ### Make Changes
 
@@ -71,6 +71,6 @@ Once you submit your PR, a team member will review your proposal. We may ask que
 
 Congratulations :tada::tada: The GitHub team thanks you :sparkles:.
 
-Once your PR is merged, your contributions will be publicly visible on the [Portfolio](https://michellemounde.github.io/portfolio/).
+Once your PR is merged, your contributions will be publicly visible on the [Portfolio](https://michellemounde.github.io/dev/).
 
 Now that you are part of the GitHub docs community, feel free to contribute more.

@@ -42,7 +42,7 @@ To install the repository, follow these steps:
 
 ## Usage
 
-Open my [Portfolio](https://michellemounde.github.io/portfolio/) and scroll or use the navigation menu to explore my dynamic website portfolio.
+Open my [Portfolio](https://michellemounde.github.io/dev/) and scroll or use the navigation menu to explore my dynamic website portfolio.
 
 ## Acknowledgements
 
@@ -79,7 +79,7 @@ If your project has a lot of features, list them here.
 - Optimize colours on both dark and light theme for accesibility
 
 ## Feedback
-Feel free to send me feedback by filing an issue. Feature requests are always welcome. If you wish to contribute or if there's anything you would like to chat about, send me an email @[michellemounde@gmail.com](mailto:michellemounde@gmail.com)!
+Feel free to send me feedback by filing an issue. Feature requests are always welcome. If you wish to contribute or if there's anything you would like to chat about, send me a chat here or on LinkedIn!
 
 ## How to Contribute
 The contributing guidelines can be found at [How to Contribute](docs/CONTRIBUTING.md).

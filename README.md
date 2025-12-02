@@ -1,8 +1,8 @@
-# Michelle Mounde's Portfolio
+# Michelle Mounde's Dev Website
 This is the second version of my Portfolio website displaying my experience and expertise as a Software Engineer.
 
 The GIF below is an example of how the project works:
-![Michelle Mounde's Portfolio Demo](https://github.com/michellemounde/michellemounde.github.io/blob/main/assets/img/Michelle_Mounde_Portfolio.gif?raw=true "Michelle Mounde's Portfolio Demo")
+![Michelle Mounde's Dev Website Demo](https://github.com/michellemounde/michellemounde.github.io/blob/main/assets/img/Michelle_Mounde_Portfolio.gif?raw=true "Michelle Mounde's Dev Website Demo")
 
 To view in VSCode, right click on the README.md file and select "Open Preview".
 
@@ -42,7 +42,7 @@ To install the repository, follow these steps:
 
 ## Usage
 
-Open my [Portfolio](https://michellemounde.github.io/dev/) and scroll or use the navigation menu to explore my dynamic website portfolio.
+Open my [Dev Website](https://michellemounde.github.io/dev/) and scroll or use the navigation menu to explore my dynamic website.
 
 ## Acknowledgements
 

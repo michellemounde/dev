@@ -1,6 +1,6 @@
-# Welcome to Michelle Mounde's Portfolio contributing guide
+# Welcome to Michelle Mounde's Dev Website contributing guide
 
-Thank you for investing your time in contributing to our project! Any contribution you make will be reflected on [michellemounde.github.io/portfolio/](https://michellemounde.github.io/dev/) :sparkles:.
+Thank you for investing your time in contributing to our project! Any contribution you make will be reflected on [michellemounde.github.io/dev/](https://michellemounde.github.io/dev/) :sparkles:.
 
 Read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community approachable and respectable.
 
@@ -71,6 +71,6 @@ Once you submit your PR, a team member will review your proposal. We may ask que
 
 Congratulations :tada::tada: The GitHub team thanks you :sparkles:.
 
-Once your PR is merged, your contributions will be publicly visible on the [Portfolio](https://michellemounde.github.io/dev/).
+Once your PR is merged, your contributions will be publicly visible on the [Dev Website](https://michellemounde.github.io/dev/).
 
 Now that you are part of the GitHub docs community, feel free to contribute more.

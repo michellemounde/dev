@@ -11,8 +11,7 @@ To view in VSCode, right click on the README.md file and select "Open Preview".
 I built this project to showcase my skills and experience as a software engineer visually, technically and practically. This project
 enables individuals and organizations interested in my work to get a quick overview of my experience and skill.
 
-I learnt how to use PostCSS, how to implement the typewriter effect & how to create a variety of visual effects such as changing color gradients
-and blurring elements using CSS.
+I learnt how to use PostCSS, how to implement the typewriter effect & how to create a variety of visual effects such as changing color gradients and blurring elements using CSS.
 
 ## Table of Contents (Optional)
 
@@ -66,17 +65,20 @@ Credits:
 
 ## Features & Implementation
 
-If your project has a lot of features, list them here.
 1. Dark & Light Theme
-2. Nav menu changes to hamburger menu on smaller devices
+2. Nav menu orientation changes on different device sizes
 3. Typewriter effect on greeting
+4. Optimize colours on both dark and light theme for improved visibility
+5. Navigation menu link highlighting on scroll based on current page & what section of the page is currently in view
 
-## Upcoming Features
-- Add search bar + functionality
-- Highlight different main sections in different colours to match current theme
-- Add working contact form
-- Add highlight nav link on scroll based on what is at top section of screen and how close to end of page
-- Optimize colours on both dark and light theme for accesibility
+## How to run website locally
+
+- Run `npm run dev` to start website
+
+## How to edit CSS
+
+1. Edit `main.css` in `assets`
+2. Run `npm run postcss:build` to implement css changes
 
 ## Feedback
 Feel free to send me feedback by filing an issue. Feature requests are always welcome. If you wish to contribute or if there's anything you would like to chat about, send me a chat here or on LinkedIn!

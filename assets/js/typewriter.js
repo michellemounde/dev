@@ -78,7 +78,6 @@ function changeGreeting() {
       }
     }
 
-    // Move pointer to next greeting
     if (idx < greetings.length - 1) {
       idx += 1;
     } else {

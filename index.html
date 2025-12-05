@@ -9,8 +9,6 @@
     <!-- Metadata -->
     <title>Redirecting...</title>
 
-    <!-- This line redirects the browser instantly -->
-    <meta http-equiv="refresh" content="0; url=pages/portfolio.html">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -25,20 +23,36 @@
 
     <!-- HTML -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.7/purify.min.js" integrity="sha512-78KH17QLT5e55GJqP76vutp1D2iAoy06WcYBXB6iBCsmO6wWzx0Qdg8EDpm8mKXv68BcvHOyeeP4wxAL0twJGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Use JavaScript for a non-cached redirect -->
+    <!-- * (cached redirect was causing issues where it was needed to bypass service workers every tiome redirect url changed) -->
+    <script type="text/javascript">
+        // unique timestamp (cache buster)
+        const timestamp = new Date().getTime();
+        const newUrl = "pages/portfolio/index.html?v=" + timestamp;
+
+        // replace() so the original redirecting page isn't in the browser history
+        window.location.replace(newUrl);
+    </script>
+
   </head>
 
   <body>
-    <header id="header-placeholder"></header>
+    <header id="top-bar">
+      <!-- Navbar -->
+      <section id="navbar" class="navbar">
+      </section>
+    </header>
 
     <!-- Wrapper -->
     <main id="wrapper" class="divided">
-      <p>You are being redirected to the <a href="./pages/portfolio.html">portfolio page</a>.</p>
+      <p>If you are not redirected automatically, follow this <a href="pages/portfolio/index.html">link to the portfolio.</a></p>
       <!-- Back to Top button -->
       <div id="back-to-top-button-placeholder"></div>
     </main>
 
     <!-- Footer -->
-    <footer id="footer-placeholder" class="wrapper align-center"></footer>
+    <footer id="footer-bar" class="wrapper align-center"></footer>
 
     <!-- Scripts -->
     <!-- Generic -->

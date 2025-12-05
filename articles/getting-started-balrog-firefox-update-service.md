@@ -53,7 +53,7 @@ As someone who uses Firefox, it's exciting to see how the update process works b
 
 Before I started working on Balrog, I hadn't heard of release engineering. It is the creation and maintenance of the infrastructure and pipelines required to build, test, and deliver software. As I delved deeper into this topic, I realized just how integral it is to the software we use every day.
 
-You can read more about Release Engineering in my previous blog post: [Release Engineering? A Brief Explanation](https://michellemounde.github.io/dev/pages/blog-article.html?article=release-engineering-a-brief-explanation.md&title=What%20is%20Release%20Engineering?%20A%20Brief%20Explanation).
+You can read more about Release Engineering in my previous blog post: [Release Engineering? A Brief Explanation](https://michellemounde.github.io/dev/pages/blog/article.html?article=release-engineering-a-brief-explanation.md&title=What%20is%20Release%20Engineering?%20A%20Brief%20Explanation).
 
 At its core, Balrog is the software that drives the Mozilla update server, facilitating quick, flexible, and scalable updates for software products. This understanding holds immense value for programmers, as it allows us to comprehend how software widely used by millions of individuals is effectively released across various devices and configurations.
 

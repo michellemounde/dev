@@ -13,38 +13,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="../assets/favicon_io/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/favicon_io/site.webmanifest">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
 
     <!-- HTML -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.7/purify.min.js" integrity="sha512-78KH17QLT5e55GJqP76vutp1D2iAoy06WcYBXB6iBCsmO6wWzx0Qdg8EDpm8mKXv68BcvHOyeeP4wxAL0twJGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
 
   <body>
-    <header id="header-placeholder"></header>
+    <header id="top-bar">
+        <!-- Navbar -->
+        <section id="navbar" class="navbar">
+        </section>
 
-    <!-- Portfolio Navigation -->
-    <nav id="navbar" class="sub-navbar">
-        <ul class="menu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <!-- TODO: Add once you have recognitions & awards <li><a href="#experience">Awards</a></li> -->
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+        <!-- Sub-Navbar -->
+        <!-- Portfolio Navigation -->
+        <section id="sub-navbar" class="navbar">
+            <nav class="top-nav">
+                <ul class="menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <!-- TODO: Add once you have recognitions & awards <li><a href="#experience">Awards</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
 
     <main id="wrapper" class="divided">
         <!-- About -->
-        <section id="about" class="main banner orient-left content-align-left image-position-center fullscreen">
+        <section id="about" data-section="about" class="main banner orient-left content-align-left image-position-center fullscreen">
             <section class="content">
                 <p class="major">
                     <span aria-label="Hi" hidden></span>
@@ -66,12 +73,12 @@
             </section>
 
             <div class="image">
-                <img src="../assets/img/profile-558.jpg" alt="Michelle Mounde's Profile Photo" />
+                <img src="../../assets/img/profile-558.jpg" alt="Michelle Mounde's Profile Photo" />
             </div>
         </section>
 
         <!-- Experience -->
-        <section id="experience" class="main wrapper">
+        <section id="experience" data-section="experience" class="main wrapper">
             <div class="inner">
                 <header>
                     <h2>Experience</h2>
@@ -95,7 +102,7 @@
         </section>
 
         <!-- Projects -->
-        <section id="projects" class="main wrapper">
+        <section id="projects" data-section="projects" class="main wrapper">
             <div class="inner">
 
                 <header class="content align-center">
@@ -138,7 +145,7 @@
                     </ul>
                 </section>
                 <div class="image">
-                    <img src="../assets/img/spotlight01.jpg" alt="Project-1 Demo GIF" />
+                    <img src="../../assets/img/spotlight01.jpg" alt="Project-1 Demo GIF" />
                 </div>
                 </section>
             </section> -->
@@ -181,7 +188,7 @@
                         </ul>
                     </section>
                     <div class="image">
-                        <img src="../assets/img/Mozilla_Balrog_iPadMini.gif" alt="Mozilla's Balrog Demo GIF" />
+                        <img src="../../assets/img/Mozilla_Balrog_iPadMini.gif" alt="Mozilla's Balrog Demo GIF" />
                     </div>
                 </section>
             </section>
@@ -224,7 +231,7 @@
                         </ul>
                     </section>
                     <div class="image">
-                        <img src="../assets/img/Monokai_RainStorm_iPadMini.gif" alt="Monokai RainStorm Demo GIF" />
+                        <img src="../../assets/img/Monokai_RainStorm_iPadMini.gif" alt="Monokai RainStorm Demo GIF" />
                     </div>
                 </section>
 
@@ -256,7 +263,7 @@
                         </ul>
                     </section>
                     <div class="image">
-                        <img src="../assets/img/spotlight02.jpg" alt="Project-2 Demo GIF" />
+                        <img src="../../assets/img/spotlight02.jpg" alt="Project-2 Demo GIF" />
                     </div>
                 </section>
 
@@ -288,7 +295,7 @@
                         </ul>
                     </section>
                     <div class="image">
-                        <img src="../assets/img/spotlight03.jpg" alt="Project-3 Demo GIF" />
+                        <img src="../../assets/img/spotlight03.jpg" alt="Project-3 Demo GIF" />
                     </div>
                 </section> -->
             </section>
@@ -297,7 +304,7 @@
         </section>
 
         <!-- Skills -->
-        <section id="skills" class="main wrapper align-center">
+        <section id="skills" data-section="skills" class="main wrapper align-center">
             <div class="inner">
                 <header>
                     <h2>Skills</h2>
@@ -341,7 +348,7 @@
                     <img alt="TailwindCSS logo" title="TailwindCSS" role="img"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" />
 
-                    <img id="sql" alt="SQL logo" title="SQL" src="../assets/img/sql-server.png" />
+                    <img id="sql" alt="SQL logo" title="SQL" src="../../assets/img/sql-server.png" />
                     <a hidden aria-label="SQL logo attribution" href="https://www.flaticon.com/free-icons/database" title="database icons">
                         Database icons created by juicy_fish - Flaticon
                     </a>
@@ -395,19 +402,19 @@
         </section>
 
         <!-- Education -->
-        <section id="education" class="main wrapper align-center">
+        <section id="education" data-section="education" class="main wrapper align-center">
             <header class="inner">
             <h2>Education</h2>
             </header>
 
             <div class="items medium">
                 <section>
-                    <img src="../assets/img/University-of-Nairobi-logo.png" alt="University of Nairobi logo" id="uon">
+                    <img src="../../assets/img/University-of-Nairobi-logo.png" alt="University of Nairobi logo" id="uon">
                     <h3>University of Nairobi</h3>
                     <p>BSc. in Quantity Surveying</p>
                 </section>
                 <section>
-                    <img src="../assets/img/app-academy-logo-red.png" alt="App Academy logo" id="aao">
+                    <img src="../../assets/img/app-academy-logo-red.png" alt="App Academy logo" id="aao">
                     <h3>App Academy Open</h3>
                     <p>Full-Stack Software Engineering (Online)</p>
                 </section>
@@ -415,7 +422,7 @@
         </section>
 
         <!-- Resume -->
-        <section id="resume" class="main wrapper align-center">
+        <section id="resume" data-section="resume" class="main wrapper align-center">
             <div class="inner">
                 <header>
                     <h2>Resume</h2>
@@ -424,7 +431,7 @@
                 <ul class="actions stacked">
                     <li>
                         <a
-                            href="../assets/files/Mounde_Michelle_Software_Engineer_Resume_Portfolio.pdf"
+                            href="../../assets/files/Mounde_Michelle_Software_Engineer_Resume_Portfolio.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             class="button primary big wide smooth-scroll-middle">
@@ -436,19 +443,19 @@
         </section>
 
         <!-- Awards, Certificates & Recognition -->
-        <!-- <section id="awards-recognition" class="main wrapper align-center">
+        <!-- <section id="awards-recognition" data-section="awards-recognition" class="main wrapper align-center">
             <header class="inner">
                 <h2>Awards, Certificates & Recognition</h2>
             </header>
 
             <div class="items medium">
                 <section>
-                    <img src="../assets/img/University-of-Nairobi-logo.png" alt="University of Nairobi logo" id="uon">
+                    <img src="../../assets/img/University-of-Nairobi-logo.png" alt="University of Nairobi logo" id="uon">
                     <h3>University of Nairobi</h3>
                     <p>BSc. in Quantity Surveying</p>
                 </section>
                 <section>
-                    <img src="../assets/img/app-academy-logo-red.png" alt="App Academy logo" id="aao">
+                    <img src="../../assets/img/app-academy-logo-red.png" alt="App Academy logo" id="aao">
                     <h3>App Academy Open</h3>
                     <p>Full-Stack Software Engineering (Online)</p>
                 </section>
@@ -456,7 +463,7 @@
         </section> -->
 
         <!-- Contact -->
-        <section id="contact" class="main wrapper align-center">
+        <section id="contact" data-section="contact" class="main wrapper align-center">
             <div class="inner medium">
             <header>
                 <h2>Get in touch</h2>
@@ -494,10 +501,10 @@
         <div id="back-to-top-button-placeholder"></div>
     </main>
 
-    <footer id="footer-placeholder" class="wrapper align-center"></footer>
+    <footer id="footer-bar" class="wrapper align-center"></footer>
 
     <!-- Scripts -->
     <!-- Generic -->
-    <script defer type="module" src="../assets/js/index.js"></script>
+    <script defer type="module" src="../../assets/js/index.js"></script>
   </body>
 </html>

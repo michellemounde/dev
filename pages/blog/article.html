@@ -2,26 +2,30 @@
 <html class="light-theme" lang="en">
     <head>
         <!-- Metadata -->
-        <title>Michelle Mounde | Blog Article</title>
+        <title>Michelle Mounde | Article</title>
         <meta charset="utf-8" />
-        <meta name="description" content="Michelle Mounde's Blog Article">
+        <meta name="description" content="Michelle Mounde's Article">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
-        <link rel="manifest" href="../assets/favicon_io/site.webmanifest">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="../../assets/favicon_io/site.webmanifest">
 
         <!-- CSS -->
-        <link rel="stylesheet" href="../assets/css/style.css" />
+        <link rel="stylesheet" href="../../assets/css/style.css" />
 
         <!-- HTML -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.7/purify.min.js" integrity="sha512-78KH17QLT5e55GJqP76vutp1D2iAoy06WcYBXB6iBCsmO6wWzx0Qdg8EDpm8mKXv68BcvHOyeeP4wxAL0twJGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/16.3.0/lib/marked.umd.min.js" integrity="sha512-V6rGY7jjOEUc7q5Ews8mMlretz1Vn2wLdMW/qgABLWunzsLfluM0FwHuGjGQ1lc8jO5vGpGIGFE+rTzB+63HdA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </head>
     <body>
-        <header id="header-placeholder"></header>
+        <header id="top-bar">
+            <!-- Navbar -->
+            <section id="navbar" class="navbar">
+            </section>
+        </header>
 
         <main id="wrapper" class="divided">
             <section id="article-content" class="main wrapper">
@@ -36,19 +40,19 @@
             <div id="back-to-top-button-placeholder"></div>
         </main>
 
-        <footer id="footer-placeholder" class="wrapper align-center"></footer>
+        <footer id="footer-bar" class="wrapper align-center"></footer>
 
         <!-- Scripts -->
         <!-- Generic -->
-        <script defer type="module" src="../assets/js/index.js"></script>
+        <script defer type="module" src="../../assets/js/index.js"></script>
 
         <script>
             function updatePageMetadata(articleTitle) {
-                document.title = `Michelle Mounde | Blog Article | ${articleTitle}`;
+                document.title = `Michelle Mounde | Article | ${articleTitle}`;
 
                 const metaDescription = document.querySelector('meta[name="description"]');
                 if (metaDescription) {
-                    metaDescription.setAttribute('content', `Michelle Mounde's Blog Article: ${articleTitle}`);
+                    metaDescription.setAttribute('content', `Michelle Mounde's Article: ${articleTitle}`);
                 }
             }
 
@@ -71,14 +75,12 @@
                 }
 
                 try {
-                    // Fetch the file from the 'blog' folder
-                    const response = await fetch(`../blog-articles/${articleFilename}`);
+                    const response = await fetch(`../../articles/${articleFilename}`);
                     if (!response.ok) {
                         throw new Error(`Could not find article: ${articleFilename}`);
                     }
                     const markdownText = await response.text();
 
-                    // Use the 'marked' library to convert markdown to HTML
                     markdownContainer.innerHTML = DOMPurify.sanitize(marked.parse(markdownText));
                 } catch (error) {
                     console.error(error);

@@ -13,23 +13,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="../assets/favicon_io/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/favicon_io/site.webmanifest">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
 
     <!-- HTML -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.7/purify.min.js" integrity="sha512-78KH17QLT5e55GJqP76vutp1D2iAoy06WcYBXB6iBCsmO6wWzx0Qdg8EDpm8mKXv68BcvHOyeeP4wxAL0twJGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
 
   <body>
-    <header id="header-placeholder"></header>
+    <header id="top-bar">
+        <!-- Navbar -->
+        <section id="navbar" class="navbar">
+        </section>
+    </header>
 
     <main id="wrapper" class="divided">
-        <section id="blog-articles-list" class="main wrapper">
+        <section id="articles" class="main wrapper">
             <div class="inner">
                 <header>
                     <h2>My Blog Posts</h2>
@@ -44,14 +48,14 @@
         <div id="back-to-top-button-placeholder"></div>
     </main>
 
-    <footer id="footer-placeholder" class="wrapper align-center"></footer>
+    <footer id="footer-bar" class="wrapper align-center"></footer>
 
     <!-- Scripts -->
     <!-- Generic -->
-    <script defer type="module" src="../assets/js/index.js"></script>
+    <script defer type="module" src="../../assets/js/index.js"></script>
     <!-- Page Specific -->
     <script type="module">
-        import { ARTICLES } from '../config/articlesData.js';
+        import { ARTICLES } from '../../config/articlesData.js';
 
         const articleContainer = document.getElementById('articles-container');
         articleContainer.textContent = ""; // Clear loading message
@@ -61,10 +65,8 @@
 
         ARTICLES.forEach(article => {
             const articleLink = document.createElement('a');
-            // We link to a dynamic view page that will render the markdown
-            articleLink.href = `blog-article.html?article=${article.filename}&title=${article.title}`;
-            articleLink.target = "_blank";
-            articleLink.rel = "noopener";
+
+            articleLink.href = `./article.html?article=${article.filename}&title=${article.title}`;
             articleLink.textContent = article.title;
             articleLink.classList.add('article-link');
 

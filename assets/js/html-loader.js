@@ -29,4 +29,4 @@ async function loadAllReusableComponents() {
     console.error('Error loading components:', error);
   }
 }
-export { loadAllReusableComponents }
+export { loadAllReusableComponents };

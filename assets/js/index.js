@@ -1,19 +1,9 @@
 import { activateDarkTheme, activateLightTheme } from './theme-toggler.js';
 import typewriter from './typewriter.js';
-import menuToggler from './menu-toggler.js';
 import { loadAllReusableComponents } from './html-loader.js';
+import { highlightActivePageLink, highlightActiveSectionLink } from './link-highlighter.js';
 
 import { REUSABLE_COMPONENTS } from '../../config/reusableComponents.js';
-
-function updateTotalTopNavbarHeight() {
-  const subNavbar = document.querySelector('nav#navbar.sub-navbar');
-
-  if (subNavbar) {
-    document.documentElement.style.setProperty('--top-subnavbar-height', '2.5rem');
-  } else {
-    document.documentElement.style.setProperty('--top-subnavbar-height', '0rem');
-  }
-}
 
 function verifyElementsPresent(componentList) {
   const missingElements = [];
@@ -38,9 +28,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (verifyElementsPresent(REUSABLE_COMPONENTS)) {
       console.log('DOM verification successful. Initializing UI functions...');
 
-      updateTotalTopNavbarHeight();
       typewriter();
-      // menuToggler();
+      highlightActivePageLink();
+      highlightActiveSectionLink();
       activateDarkTheme();
       activateLightTheme();
     } else {
